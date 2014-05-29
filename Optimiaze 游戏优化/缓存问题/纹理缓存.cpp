@@ -1,0 +1,1 @@
+最底层也最有效的纹理缓存CCTextureCache，这里缓存的是加载到内存中的纹理资源，也就是图片资源。static CCTextureCache* sharedTextureCache();   //返回纹理缓存的全局单例  CCTexture2D* addImage(const char* fileimage);  //添加一张纹理图片到缓存中  void removeUnusedTextures();                   //清除不使用的纹理 引擎会在设备出现内存警告时自动清理缓存，但是这显然在很多情况下已经为时过晚了。一般情况下，我们应该在切换场景时清理缓存中的无用纹理，因为不同场景间使用的纹理是不同的。如果确实存在着共享的纹理，将其加入一个标记数组来保持其引用计数，以避免被清理了。

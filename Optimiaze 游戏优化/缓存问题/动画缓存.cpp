@@ -1,0 +1,1 @@
+对于一个精灵动画，每次创建时都需要加载精灵帧，按顺序添加到数组，再创建对应动作类，这是一个非常烦琐的计算过程。对于使用频率高的动画，比如鱼的游动，将其加入缓存可以有效降低每次创建的巨大消耗。static CCAnimationCache* sharedAnimationCache(void);//全局共享的缓存单例  void addAnimation(CCAnimation *animation, const char * name);//添加一个动画到缓存  void removeAnimationByName(const char* name);//移除一个指定的动画  CCAnimation* animationByName(const char* name);//获得事先存入的动画

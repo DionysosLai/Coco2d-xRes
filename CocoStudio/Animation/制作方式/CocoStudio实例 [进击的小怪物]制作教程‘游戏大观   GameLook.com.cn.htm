@@ -1,0 +1,1051 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0041)http://www.gamelook.com.cn/2013/12/139820 -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="zh-CN" xml:lang="zh-CN"><head profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>
+CocoStudio实例:[进击的小怪物]制作教程‘游戏大观 | GameLook.com.cn</title>
+	
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+         <link rel="shortcut icon" href="http://www.gamelook.com.cn/2013/12/favicon.ico">
+	<link rel="stylesheet" type="text/css" media="all" href="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/style.css">
+	<link rel="alternate" type="application/rss+xml" title="游戏大观 | GameLook.com.cn RSS Feed" href="http://www.gamelook.com.cn/feed">
+	<link rel="alternate" type="application/atom+xml" title="游戏大观 | GameLook.com.cn Atom Feed" href="http://www.gamelook.com.cn/feed/atom">
+	<link rel="pingback" href="http://www.gamelook.com.cn/xmlrpc.php">
+	<link rel="shortcut icon" href="http://www.gamelook.com.cn/wp-content/themes/weekly_1.0.3/images/favicon.ico">
+	<link rel="alternate" type="application/rss+xml" title="游戏大观 | GameLook.com.cn » CocoStudio实例:[进击的小怪物]制作教程 评论 feed" href="http://www.gamelook.com.cn/2013/12/139820/feed">
+<script type="text/javascript">
+var duoshuoQuery = {"short_name":"gamelook","sso":{"login":"http:\/\/www.gamelook.com.cn\/wp-login.php?action=duoshuo_login","logout":"http:\/\/www.gamelook.com.cn\/wp-login.php?action=logout&_wpnonce=227f64ff8f"},"remote_auth":"W10= 3811ac31e42d84b661020b6520627b76943e55e1 1398224896"};
+duoshuoQuery.sso.login += '&redirect_to=' + encodeURIComponent(window.location.href);
+duoshuoQuery.sso.logout += '&redirect_to=' + encodeURIComponent(window.location.href);
+</script><style type="text/css"></style>
+<script type="text/javascript" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/embed.js"></script>
+<script type="text/javascript" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jquery-1.3.2.min.js"></script><link type="text/css" rel="stylesheet" href="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/embed.default.css"><link type="text/css" rel="stylesheet" href="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/Weekly.css"></head><body class="single single-post postid-139820"><script src="http://tajs.qq.com/jiathis.php?uid=1506259&dm=www.gamelook.com.cn" charset="utf-8"></script><script src="http://tajs.qq.com/jiathis.php?uid=1506259&dm=www.gamelook.com.cn" charset="utf-8"></script><link href="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jiathis_share.css" rel="stylesheet" type="text/css"><div class="jiathis_style" style="height: auto; position: fixed; z-index: 100000000; top: 150px; right: 0px; overflow: hidden; width: 26px;"><table cellpadding="0" cellspacing="0"><tbody style="background:transparent"><tr><td style="background:transparent"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/r5.gif" style="cursor:pointer;" onmouseover="$CKE.over()" onclick="$CKE.center(this)"></td><td><div><div class="jiadiv_01"><div style="width:100%;background:#F2F2F2;border-bottom:1px solid #E5E5E5;line-height:200%;padding-left:5px;font-size:12px"><table width="100%"><tbody><tr class="jt_sharetitle"><td align="left" style="text-align:left;line-height:25px;font-size:14px;font-weight:bold;color:#000000;">分享到...</td><td align="right" style="text-align:right;"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/img_exit.gif" border="0" style="opacity:0.5;filter:alpha(opacity=50);margin:0 10px;cursor:pointer;" onclick="$CKE.shareClose();"></td></tr></tbody></table></div><div class="jiadiv_02" style="width:100%;" id="jiathis_sers"><a href="javascript:;" onclick="jiathis_sendto(&#39;qzone&#39;);return false;" class="jiatitle"><span class="jtico jtico_qzone" style="font-weight:bold;">QQ空间</span></a><a href="javascript:;" onclick="jiathis_sendto(&#39;tsina&#39;);return false;" class="jiatitle"><span class="jtico jtico_tsina" style="font-weight:bold;">新浪微博</span></a><a href="javascript:;" onclick="jiathis_sendto(&#39;tqq&#39;);return false;" class="jiatitle"><span class="jtico jtico_tqq" style="font-weight:bold;">腾讯微博</span></a><a href="javascript:;" onclick="jiathis_sendto(&#39;weixin&#39;);return false;" class="jiatitle"><span class="jtico jtico_weixin" style="font-weight:bold;">微信</span></a><a href="javascript:;" onclick="jiathis_sendto(&#39;renren&#39;);return false;" class="jiatitle"><span class="jtico jtico_renren" style="font-weight:bold;">人人网</span></a><a href="javascript:;" onclick="jiathis_sendto(&#39;douban&#39;);return false;" class="jiatitle"><span class="jtico jtico_douban" style="font-weight:bold;">豆瓣</span></a><a href="javascript:;" onclick="jiathis_sendto(&#39;xiaoyou&#39;);return false;" class="jiatitle"><span class="jtico jtico_xiaoyou">朋友网</span></a><a href="javascript:;" onclick="jiathis_sendto(&#39;fb&#39;);return false;" class="jiatitle"><span class="jtico jtico_fb">Facebook</span></a><a href="javascript:;" onclick="jiathis_sendto(&#39;twitter&#39;);return false;" class="jiatitle"><span class="jtico jtico_twitter">Twitter</span></a><a href="javascript:;" onclick="jiathis_sendto(&#39;googleplus&#39;);return false;" class="jiatitle"><span class="jtico jtico_googleplus">Google+</span></a><a href="javascript:;" onclick="jiathis_sendto(&#39;reddit&#39;);return false;" class="jiatitle"><span class="jtico jtico_reddit">Reddit</span></a><a href="javascript:;" onclick="jiathis_sendto(&#39;linkedin&#39;);return false;" class="jiatitle"><span class="jtico jtico_linkedin">LinkedIn</span></a><a href="javascript:;" onclick="jiathis_sendto(&#39;copy&#39;);return false;" class="jiatitle"><span class="jtico jtico_copy">复制网址</span></a><a href="javascript:;" onclick="jiathis_sendto(&#39;email&#39;);return false;" class="jiatitle"><span class="jtico jtico_email">邮件</span></a><a href="javascript:;" onclick="jiathis_sendto(&#39;yixin&#39;);return false;" class="jiatitle"><span class="jtico jtico_yixin">易信</span></a><a href="javascript:;" onclick="$CKE.center(this);return false;" class="jiatitle"><span class="jtico jtico_jiathis">查看更多(122)</span></a><div style="clear:both"></div></div><div class="ckepopBottom" style="width:100%;"><div style="float:left;font-size:10px"><a href="http://www.jiathis.com/help/html/what-is-jiathis" class="link_01" style="color:#333333;" target="_blank">这是什么工具?</a></div><div style="float:right;font-size:11px;margin:0 5px 0 0;"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/img_012.gif" align="absmiddle" border="0"><a href="http://www.jiathis.com/index2" style="color:#333333;padding:0 3px;" class="link_01" target="_blank">JiaThis</a></div><div style="clear:both"></div></div></div></div></td></tr></tbody></table></div><iframe frameborder="0" style="position: absolute; display: none;"></iframe><div class="jiathis_style" style="height: auto; position: absolute; z-index: 100000000; display: none; top: 50%; left: 50%; overflow: auto;"><div style="border:10px solid #7F7F7F; width:300px;"><div class="jiadiv_01" style="width:300px;"><div style="background:#F2F2F2;line-height:100%;height:30px;overflow:hidden;width:300px;"><table width="100%" style="margin:5px 0 0 0;"><tbody><tr class="jt_sharetitle" style="line-height:20px!important;"><td align="left" style="text-align:left;font-size:12px;">分享到各大网站</td><td align="right"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/img_exit.gif" border="0" style="margin:0 4px;cursor:pointer;" onclick="$CKE.centerClose();"></td></tr></tbody></table></div><div class="searchTxtCont"><div style="background:url(http://v3.jiathis.com/code/images/img_so.gif) no-repeat center;height:30px; width:281px"><form onsubmit="return false;"><input class="searchTxt" name="" type="text" onclick="this.value=&#39;&#39;;this.style.color=&#39;#000&#39;;" value="输入网站名或拼音缩写" onkeyup="$CKE.choose(this);"></form></div></div><div id="jiathis_sharelist" class="jiadiv_02" style="width:300px;height:300px;overflow-y:auto;"><a href="javascript:;" onclick="jiathis_sendto(&#39;ishare&#39;);return false;" class="jiatitle"><span class="jtico jtico_ishare">一键分享</span><input type="hidden" value="ishare,一键分享,yjfx"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;ujian&#39;);return false;" class="jiatitle"><span class="jtico jtico_ujian">猜你喜欢</span><input type="hidden" value="ujian,猜你喜欢,cnxh"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;copy&#39;);return false;" class="jiatitle"><span class="jtico jtico_copy">复制网址</span><input type="hidden" value="copy,复制网址,fzwz"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;fav&#39;);return false;" class="jiatitle"><span class="jtico jtico_fav">收藏夹</span><input type="hidden" value="fav,收藏夹,scj"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;print&#39;);return false;" class="jiatitle"><span class="jtico jtico_print">打印</span><input type="hidden" value="print,打印,dy"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;email&#39;);return false;" class="jiatitle"><span class="jtico jtico_email">邮件</span><input type="hidden" value="email,邮件,yj"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;qzone&#39;);return false;" class="jiatitle"><span class="jtico jtico_qzone">QQ空间</span><input type="hidden" value="qzone,QQ空间,qqkj"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;tsina&#39;);return false;" class="jiatitle"><span class="jtico jtico_tsina">新浪微博</span><input type="hidden" value="tsina,新浪微博,xlwb"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;weixin&#39;);return false;" class="jiatitle"><span class="jtico jtico_weixin">微信</span><input type="hidden" value="weixin,微信,wx"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;tqq&#39;);return false;" class="jiatitle"><span class="jtico jtico_tqq">腾讯微博</span><input type="hidden" value="tqq,腾讯微博,txwb"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;tsohu&#39;);return false;" class="jiatitle"><span class="jtico jtico_tsohu">搜狐微博</span><input type="hidden" value="tsohu,搜狐微博,shwb"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;t163&#39;);return false;" class="jiatitle"><span class="jtico jtico_t163">网易微博</span><input type="hidden" value="t163,网易微博,wywb"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;renren&#39;);return false;" class="jiatitle"><span class="jtico jtico_renren">人人网</span><input type="hidden" value="renren,人人网,rrw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;kaixin001&#39;);return false;" class="jiatitle"><span class="jtico jtico_kaixin001">开心网</span><input type="hidden" value="kaixin001,开心网,kxw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;googleplus&#39;);return false;" class="jiatitle"><span class="jtico jtico_googleplus">Google+</span><input type="hidden" value="googleplus,Google+,googlej"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;yixin&#39;);return false;" class="jiatitle"><span class="jtico jtico_yixin">易信</span><input type="hidden" value="yixin,易信,yx"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;alibaba&#39;);return false;" class="jiatitle"><span class="jtico jtico_alibaba">阿里巴巴</span><input type="hidden" value="alibaba,阿里巴巴,albb"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;douban&#39;);return false;" class="jiatitle"><span class="jtico jtico_douban">豆瓣</span><input type="hidden" value="douban,豆瓣,db"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;xiaoyou&#39;);return false;" class="jiatitle"><span class="jtico jtico_xiaoyou">朋友网</span><input type="hidden" value="xiaoyou,朋友网,pyw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;sdonote&#39;);return false;" class="jiatitle"><span class="jtico jtico_sdonote">麦库记事</span><input type="hidden" value="sdonote,麦库记事,mkjs"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;baidu&#39;);return false;" class="jiatitle"><span class="jtico jtico_baidu">百度搜藏</span><input type="hidden" value="baidu,百度搜藏,bdsc"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;taobao&#39;);return false;" class="jiatitle"><span class="jtico jtico_taobao">淘江湖</span><input type="hidden" value="taobao,淘江湖,tjh"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;ydnote&#39;);return false;" class="jiatitle"><span class="jtico jtico_ydnote">有道云笔记</span><input type="hidden" value="ydnote,有道云笔记,ydybj"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;189share&#39;);return false;" class="jiatitle"><span class="jtico jtico_189share">手机快传</span><input type="hidden" value="189share,手机快传,sjkc"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;tianya&#39;);return false;" class="jiatitle"><span class="jtico jtico_tianya">天涯社区</span><input type="hidden" value="tianya,天涯社区,tysq"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;feixin&#39;);return false;" class="jiatitle"><span class="jtico jtico_feixin">飞信</span><input type="hidden" value="feixin,飞信,fx"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;tieba&#39;);return false;" class="jiatitle"><span class="jtico jtico_tieba">百度贴吧</span><input type="hidden" value="tieba,百度贴吧,bdtb"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;qingbiji&#39;);return false;" class="jiatitle"><span class="jtico jtico_qingbiji">轻笔记</span><input type="hidden" value="qingbiji,轻笔记,qbj"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;tifeng&#39;);return false;" class="jiatitle"><span class="jtico jtico_tifeng">凤凰微博</span><input type="hidden" value="tifeng,凤凰微博,fhwb"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;youshi&#39;);return false;" class="jiatitle"><span class="jtico jtico_youshi">优士网</span><input type="hidden" value="youshi,优士网,ysw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;fanfou&#39;);return false;" class="jiatitle"><span class="jtico jtico_fanfou">饭否</span><input type="hidden" value="fanfou,饭否,ff"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;diandian&#39;);return false;" class="jiatitle"><span class="jtico jtico_diandian">点点网</span><input type="hidden" value="diandian,点点网,ddw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;mingdao&#39;);return false;" class="jiatitle"><span class="jtico jtico_mingdao">明道</span><input type="hidden" value="mingdao,明道,md"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;zsvs&#39;);return false;" class="jiatitle"><span class="jtico jtico_zsvs">中搜v商</span><input type="hidden" value="zsvs,中搜v商,zsvs"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;google&#39;);return false;" class="jiatitle"><span class="jtico jtico_google">谷歌</span><input type="hidden" value="google,谷歌,gg"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;buzz&#39;);return false;" class="jiatitle"><span class="jtico jtico_buzz">谷歌Buzz</span><input type="hidden" value="buzz,谷歌Buzz,ggbuzz"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;youdao&#39;);return false;" class="jiatitle"><span class="jtico jtico_youdao">有道书签</span><input type="hidden" value="youdao,有道书签,ydsq"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;cqq&#39;);return false;" class="jiatitle"><span class="jtico jtico_cqq">QQ好友</span><input type="hidden" value="cqq,QQ好友,cqq"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;qq&#39;);return false;" class="jiatitle"><span class="jtico jtico_qq">QQ书签</span><input type="hidden" value="qq,QQ书签,qqsq"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;msn&#39;);return false;" class="jiatitle"><span class="jtico jtico_msn">MSN</span><input type="hidden" value="msn,MSN,msn"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;pinterest&#39;);return false;" class="jiatitle"><span class="jtico jtico_pinterest">Pinterest</span><input type="hidden" value="pinterest,Pinterest,pinterest"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;huaban&#39;);return false;" class="jiatitle"><span class="jtico jtico_huaban">花瓣网</span><input type="hidden" value="huaban,花瓣网,hbw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;duitang&#39;);return false;" class="jiatitle"><span class="jtico jtico_duitang">堆糖</span><input type="hidden" value="duitang,堆糖,dt"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;tyaolan&#39;);return false;" class="jiatitle"><span class="jtico jtico_tyaolan">摇篮微博</span><input type="hidden" value="tyaolan,摇篮微博,ylwb"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;115&#39;);return false;" class="jiatitle"><span class="jtico jtico_115">115收藏</span><input type="hidden" value="115,115收藏,115sc"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;hi&#39;);return false;" class="jiatitle"><span class="jtico jtico_hi">百度空间</span><input type="hidden" value="hi,百度空间,bdkj"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;gmail&#39;);return false;" class="jiatitle"><span class="jtico jtico_gmail">Gmail邮箱</span><input type="hidden" value="gmail,Gmail邮箱,gmailyx"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;hotmail&#39;);return false;" class="jiatitle"><span class="jtico jtico_hotmail">Hotmail邮箱</span><input type="hidden" value="hotmail,Hotmail邮箱,hotmailyx"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;xqw&#39;);return false;" class="jiatitle"><span class="jtico jtico_xqw">雪球</span><input type="hidden" value="xqw,雪球,xqw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;hexun&#39;);return false;" class="jiatitle"><span class="jtico jtico_hexun">和讯</span><input type="hidden" value="hexun,和讯,hx"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;toeeee&#39;);return false;" class="jiatitle"><span class="jtico jtico_toeeee">南方微博</span><input type="hidden" value="toeeee,南方微博,nfwb"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;139mail&#39;);return false;" class="jiatitle"><span class="jtico jtico_139mail">139邮箱</span><input type="hidden" value="139mail,139邮箱,139yx"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;189mail&#39;);return false;" class="jiatitle"><span class="jtico jtico_189mail">189邮箱</span><input type="hidden" value="189mail,189邮箱,189yx"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;i139&#39;);return false;" class="jiatitle"><span class="jtico jtico_i139">爱分享</span><input type="hidden" value="i139,爱分享,afx"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;iwo&#39;);return false;" class="jiatitle"><span class="jtico jtico_iwo">WO+分享</span><input type="hidden" value="iwo,WO+分享,iwo"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;189cn&#39;);return false;" class="jiatitle"><span class="jtico jtico_189cn">翼友圈</span><input type="hidden" value="189cn,翼友圈,yyq"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;139&#39;);return false;" class="jiatitle"><span class="jtico jtico_139">移动微博</span><input type="hidden" value="139,移动微博,ydwb"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;tpeople&#39;);return false;" class="jiatitle"><span class="jtico jtico_tpeople">人民微博</span><input type="hidden" value="tpeople,人民微博,rmwb"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;cnfol&#39;);return false;" class="jiatitle"><span class="jtico jtico_cnfol">中金微博</span><input type="hidden" value="cnfol,中金微博,zjwb"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;txinhua&#39;);return false;" class="jiatitle"><span class="jtico jtico_txinhua">新华微博</span><input type="hidden" value="txinhua,新华微博,xhwb"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;caimi&#39;);return false;" class="jiatitle"><span class="jtico jtico_caimi">财迷</span><input type="hidden" value="caimi,财迷,cm"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;translate&#39;);return false;" class="jiatitle"><span class="jtico jtico_translate">谷歌翻译</span><input type="hidden" value="translate,谷歌翻译,ggfy"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;tuita&#39;);return false;" class="jiatitle"><span class="jtico jtico_tuita">推他</span><input type="hidden" value="tuita,推他,tt"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;mop&#39;);return false;" class="jiatitle"><span class="jtico jtico_mop">猫扑推客</span><input type="hidden" value="mop,猫扑推客,mptk"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;digu&#39;);return false;" class="jiatitle"><span class="jtico jtico_digu">嘀咕网</span><input type="hidden" value="digu,嘀咕网,dgw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;xianguo&#39;);return false;" class="jiatitle"><span class="jtico jtico_xianguo">鲜果</span><input type="hidden" value="xianguo,鲜果,xg"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;faxianla&#39;);return false;" class="jiatitle"><span class="jtico jtico_faxianla">发现啦</span><input type="hidden" value="faxianla,发现啦,fxl"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;ganniu&#39;);return false;" class="jiatitle"><span class="jtico jtico_ganniu">赶牛网</span><input type="hidden" value="ganniu,赶牛网,gnw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;miliao&#39;);return false;" class="jiatitle"><span class="jtico jtico_miliao">米聊</span><input type="hidden" value="miliao,米聊,ml"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;kansohu&#39;);return false;" class="jiatitle"><span class="jtico jtico_kansohu">搜狐随身看</span><input type="hidden" value="kansohu,搜狐随身看,shssk"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;51&#39;);return false;" class="jiatitle"><span class="jtico jtico_51">51社区</span><input type="hidden" value="51,51社区,51sq"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;ifengkb&#39;);return false;" class="jiatitle"><span class="jtico jtico_ifengkb">凤凰快博</span><input type="hidden" value="ifengkb,凤凰快博,fhkb"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;jcrb&#39;);return false;" class="jiatitle"><span class="jtico jtico_jcrb">法律微博</span><input type="hidden" value="jcrb,法律微博,flwb"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;gmw&#39;);return false;" class="jiatitle"><span class="jtico jtico_gmw">光明网</span><input type="hidden" value="gmw,光明网,gmw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;leihou&#39;);return false;" class="jiatitle"><span class="jtico jtico_leihou">雷猴网</span><input type="hidden" value="leihou,雷猴网,lhw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;thexun&#39;);return false;" class="jiatitle"><span class="jtico jtico_thexun">和讯微博</span><input type="hidden" value="thexun,和讯微博,hxwb"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;dream163&#39;);return false;" class="jiatitle"><span class="jtico jtico_dream163">游戏江湖</span><input type="hidden" value="dream163,游戏江湖,yxjh"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;masar&#39;);return false;" class="jiatitle"><span class="jtico jtico_masar">玛撒网</span><input type="hidden" value="masar,玛撒网,msw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;binzhi&#39;);return false;" class="jiatitle"><span class="jtico jtico_binzhi">宾至网</span><input type="hidden" value="binzhi,宾至网,bzw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;fb&#39;);return false;" class="jiatitle"><span class="jtico jtico_fb">Facebook</span><input type="hidden" value="fb,Facebook,facebook"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;twitter&#39;);return false;" class="jiatitle"><span class="jtico jtico_twitter">Twitter</span><input type="hidden" value="twitter,Twitter,twitter"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;tumblr&#39;);return false;" class="jiatitle"><span class="jtico jtico_tumblr">Tumblr</span><input type="hidden" value="tumblr,Tumblr,tumblr"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;reddit&#39;);return false;" class="jiatitle"><span class="jtico jtico_reddit">Reddit</span><input type="hidden" value="reddit,Reddit,reddit"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;instapaper&#39;);return false;" class="jiatitle"><span class="jtico jtico_instapaper">Instapaper</span><input type="hidden" value="instapaper,Instapaper,instapaper"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;pocket&#39;);return false;" class="jiatitle"><span class="jtico jtico_pocket">Pocket</span><input type="hidden" value="pocket,Pocket,pocket"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;wealink&#39;);return false;" class="jiatitle"><span class="jtico jtico_wealink">若邻网</span><input type="hidden" value="wealink,若邻网,rlw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;leshou&#39;);return false;" class="jiatitle"><span class="jtico jtico_leshou">乐收</span><input type="hidden" value="leshou,乐收,ls"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;waakee&#39;);return false;" class="jiatitle"><span class="jtico jtico_waakee">挖客网</span><input type="hidden" value="waakee,挖客网,wkw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;cyzone&#39;);return false;" class="jiatitle"><span class="jtico jtico_cyzone">创业邦</span><input type="hidden" value="cyzone,创业邦,cyb"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;99earth&#39;);return false;" class="jiatitle"><span class="jtico jtico_99earth">救救地球</span><input type="hidden" value="99earth,救救地球,jjdq"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;chouti&#39;);return false;" class="jiatitle"><span class="jtico jtico_chouti">抽屉网</span><input type="hidden" value="chouti,抽屉网,ctw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;dig24&#39;);return false;" class="jiatitle"><span class="jtico jtico_dig24">递客网</span><input type="hidden" value="dig24,递客网,dkw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;douban9dian&#39;);return false;" class="jiatitle"><span class="jtico jtico_douban9dian">豆瓣9点</span><input type="hidden" value="douban9dian,豆瓣9点,db9d"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;meilishuo&#39;);return false;" class="jiatitle"><span class="jtico jtico_meilishuo">美丽说</span><input type="hidden" value="meilishuo,美丽说,mls"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;mogujie&#39;);return false;" class="jiatitle"><span class="jtico jtico_mogujie">蘑菇街</span><input type="hidden" value="mogujie,蘑菇街,mgj"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;tianji&#39;);return false;" class="jiatitle"><span class="jtico jtico_tianji">天际网</span><input type="hidden" value="tianji,天际网,tjw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;poco&#39;);return false;" class="jiatitle"><span class="jtico jtico_poco">Poco网</span><input type="hidden" value="poco,Poco网,pocow"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;yijee&#39;);return false;" class="jiatitle"><span class="jtico jtico_yijee">易集网</span><input type="hidden" value="yijee,易集网,yjw"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;pdfonline&#39;);return false;" class="jiatitle"><span class="jtico jtico_pdfonline">Pdf在线转换</span><input type="hidden" value="pdfonline,Pdf在线转换,pdfzxzh"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;printfriendly&#39;);return false;" class="jiatitle"><span class="jtico jtico_printfriendly">友好打印</span><input type="hidden" value="printfriendly,友好打印,yhdy"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;w3c&#39;);return false;" class="jiatitle"><span class="jtico jtico_w3c">W3c验证</span><input type="hidden" value="w3c,W3c验证,w3cyz"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;bitly&#39;);return false;" class="jiatitle"><span class="jtico jtico_bitly">Bit.ly</span><input type="hidden" value="bitly,Bit.ly,bitly"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;digg&#39;);return false;" class="jiatitle"><span class="jtico jtico_digg">Digg</span><input type="hidden" value="digg,Digg,digg"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;mailru&#39;);return false;" class="jiatitle"><span class="jtico jtico_mailru">Mail.ru</span><input type="hidden" value="mailru,Mail.ru,mail.ru"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;diigo&#39;);return false;" class="jiatitle"><span class="jtico jtico_diigo">Diigo</span><input type="hidden" value="diigo,Diigo,diigo"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;evernote&#39;);return false;" class="jiatitle"><span class="jtico jtico_evernote">EverNote</span><input type="hidden" value="evernote,EverNote,evernote"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;friendfeed&#39;);return false;" class="jiatitle"><span class="jtico jtico_friendfeed">FriendFeed</span><input type="hidden" value="friendfeed,FriendFeed,friendfeed"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;myspace&#39;);return false;" class="jiatitle"><span class="jtico jtico_myspace">Myspace</span><input type="hidden" value="myspace,Myspace,myspace"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;linkedin&#39;);return false;" class="jiatitle"><span class="jtico jtico_linkedin">LinkedIn</span><input type="hidden" value="linkedin,LinkedIn,linkedin"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;mixx&#39;);return false;" class="jiatitle"><span class="jtico jtico_mixx">Mixx</span><input type="hidden" value="mixx,Mixx,mixx"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;netlog&#39;);return false;" class="jiatitle"><span class="jtico jtico_netlog">NetLog</span><input type="hidden" value="netlog,NetLog,netlog"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;netvibes&#39;);return false;" class="jiatitle"><span class="jtico jtico_netvibes">Netvibes</span><input type="hidden" value="netvibes,Netvibes,netvibes"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;phonefavs&#39;);return false;" class="jiatitle"><span class="jtico jtico_phonefavs">Phonefavs</span><input type="hidden" value="phonefavs,Phonefavs,phonefavs"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;pingfm&#39;);return false;" class="jiatitle"><span class="jtico jtico_pingfm">Ping.fm</span><input type="hidden" value="pingfm,Ping.fm,ping.fm"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;plaxo&#39;);return false;" class="jiatitle"><span class="jtico jtico_plaxo">Plaxo</span><input type="hidden" value="plaxo,Plaxo,plaxo"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;delicious&#39;);return false;" class="jiatitle"><span class="jtico jtico_delicious">Delicious</span><input type="hidden" value="delicious,Delicious,delicious"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;wong&#39;);return false;" class="jiatitle"><span class="jtico jtico_wong">Mister Wong</span><input type="hidden" value="wong,Mister Wong,misterwong"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;stumbleupon&#39;);return false;" class="jiatitle"><span class="jtico jtico_stumbleupon">Stumbleupon</span><input type="hidden" value="stumbleupon,Stumbleupon,stumbleupon"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;plurk&#39;);return false;" class="jiatitle"><span class="jtico jtico_plurk">Plurk</span><input type="hidden" value="plurk,Plurk,plurk"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;funp&#39;);return false;" class="jiatitle"><span class="jtico jtico_funp">Funp</span><input type="hidden" value="funp,Funp,funp"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;myshare&#39;);return false;" class="jiatitle"><span class="jtico jtico_myshare">Myshare</span><input type="hidden" value="myshare,Myshare,myshare"></a><a href="javascript:;" onclick="jiathis_sendto(&#39;fwisp&#39;);return false;" class="jiatitle"><span class="jtico jtico_fwisp">Fwisp</span><input type="hidden" value="fwisp,Fwisp,fwisp"></a><div style="clear:both"></div></div><div class="centerBottom"><div style="float:left;font-size:10px;"><a href="http://www.jiathis.com/help/html/what-is-jiathis" class="link_01" style="color:#333333;" target="_blank">这是什么工具?</a></div><div style="float:right;font-size:11px;margin:0 10px 0 0;"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/img_012.gif" align="absmiddle" border="none">&nbsp;<a href="http://www.jiathis.com/index2" style="color:#333333;" class="link_01" target="_blank">JiaThis</a></div><div style="clear:both"></div></div></div></div></div><iframe frameborder="0" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jiathis_utility.htm" style="display: none;"></iframe><link href="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jiathis_share.css" rel="stylesheet" type="text/css"><iframe frameborder="0" style="position: absolute; display: none; opacity: 0;"></iframe><div class="jiathis_style" style="position: absolute; z-index: 1000000000; display: none; top: 50%; left: 50%; overflow: auto;"></div><div class="jiathis_style" style="position: absolute; z-index: 1000000000; display: none; overflow: auto;"></div><iframe frameborder="0" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jiathis_utility.htm" style="display: none;"></iframe><iframe src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/js.htm" width="0" height="0" frameborder="0"></iframe>
+
+<script type="text/javascript" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jcookie.js"></script>
+<script type="text/javascript" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jcarousellite.js"></script>
+<script type="text/javascript" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/superfish.js"></script>
+<script type="text/javascript" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/global.js"></script>
+<script type="text/javascript" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/loopedslider.js"></script>
+<script type="text/javascript" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/scrolltopcontrol.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.gamelook.com.cn/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.gamelook.com.cn/wp-includes/wlwmanifest.xml"> 
+<link rel="index" title="游戏大观 | GameLook.com.cn" href="http://www.gamelook.com.cn/">
+<link rel="start" title="迪斯尼积极涉足游戏市场 正寻找收购对象" href="http://www.gamelook.com.cn/2009/06/8">
+<link rel="prev" title="苹果推出2013年度iOS手游排名" href="http://www.gamelook.com.cn/2013/12/139766">
+<link rel="next" title="拓维获Rovio[愤怒的小鸟]等中国区运营权" href="http://www.gamelook.com.cn/2013/12/139802">
+<meta name="generator" content="WordPress 3.0.4">
+<link rel="canonical" href="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn.htm">
+<link rel="shortlink" href="http://www.gamelook.com.cn/?p=139820">
+<style type="text/css">
+body { background-color: #000000; }
+</style>
+	
+	<!--begin of header code-->	
+			<!--end of header code-->
+	
+	<!--[if lt IE 7]>
+	
+	<style type="text/css"> 
+		body {behavior:url("http://www.gamelook.com.cn/wp-content/themes/weekly_1.0.3/js/csshover3.htc");}
+	</style>
+	
+	<script type="text/javascript" src="http://www.gamelook.com.cn/wp-content/themes/weekly_1.0.3/js/pngfix.js"></script>
+	
+	<script type="text/javascript">
+			DD_belatedPNG.fix('#image-logo a, .cat-feedlink a,.pc-feedlink a, .sf-sub-indicator, .pc-next, .pc-prev, .backtotop');
+	</script>
+	
+	<![endif]-->
+       <!--<base target="_blank">--><base href="." target="_blank">
+	
+
+
+
+
+
+ 
+ 
+
+<div id="wrapper">
+	<div id="top">
+		
+		<div id="search">
+			<form method="get" id="searchform" action="http://www.gamelook.com.cn/">
+				<input type="text" class="field" name="s" id="s" value="Search in this site..." onfocus="if (this.value == &#39;Search in this site...&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;Search in this site...&#39;;}">
+				<input class="submit btn" type="image" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/icon-search.gif" value="Go">
+			</form>
+		</div><!--end #search -->
+
+<!--begin of top navigation-->			
+		<div class="topnav">	
+					<ul id="page-nav" class="topnav sf-js-enabled">
+				<li class="page_item page-item-2221"><a href="http://www.gamelook.com.cn/gtech-qq%e7%be%a4" title="QQ群">QQ群</a></li>
+<li class="page_item page-item-12123"><a href="http://www.gamelook.com.cn/%e6%8a%95%e7%a8%bf" title="投稿">投稿</a></li>
+<li class="page_item page-item-19212"><a href="http://www.gamelook.com.cn/%e8%81%94%e7%b3%bb%e6%88%91%e4%bb%ac" title="联系我们">联系我们</a></li>
+			</ul>
+		<!--end of topnavigation-->
+    	<!--begin of top social links-->		
+					<ul class="topnav top-social sf-js-enabled">
+				<li><a class="top-rss" href="http://feed.feedsky.com/gamelook" rel="nofollow" target="_blank">RSS</a></li>
+				<li><a class="top-email" href="http://feedburner.google.com/fb/a/mailverify?uri=gamelook&loc=en_US" rel="nofollow" target="_blank">Email</a></li>
+			</ul>
+			
+    	</div> <!--end .top-social-->
+<!--end of top social links-->    	
+
+    </div> <!--end #top-->
+    	
+	<div id="header">
+<a href="http://www.gamelook.com.cn/"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/headbk.jpg"></a>
+
+	</div><!-- #header -->
+
+	<div id="cat-menu">
+	    	
+						<ul id="cat-nav" class="nav sf-js-enabled">
+					<li class="first"><a href="http://www.gamelook.com.cn/">Home</a></li>
+						<li class="cat-item cat-item-5"><a href="http://www.gamelook.com.cn/category/news" title="查看 News 下的所有文章" class="sf-with-ul">News<span class="sf-sub-indicator"> »</span></a>
+<ul class="children" style="display: none; visibility: hidden;">
+	<li class="cat-item cat-item-6"><a href="http://www.gamelook.com.cn/category/news/%e5%9b%bd%e5%86%85%e6%96%b0%e9%97%bb" title="查看 国内新闻 下的所有文章">国内新闻</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://www.gamelook.com.cn/category/news/%e4%b8%9a%e5%8a%a1%e8%bf%81%e5%be%99" title="查看 产品代理/联合运营 下的所有文章">产品代理/联合运营</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="http://www.gamelook.com.cn/category/news/%e5%85%ab%e5%8d%a6%e5%b0%8f%e9%81%93" title="查看 八卦小道 下的所有文章">八卦小道</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8" title="查看 活动 下的所有文章" class="sf-with-ul">活动<span class="sf-sub-indicator"> »</span></a>
+	<ul class="children" style="display: none; visibility: hidden;">
+	<li class="cat-item cat-item-32"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/chinajoy" title="查看 Chinajoy 下的所有文章">Chinajoy</a>
+</li>
+	<li class="cat-item cat-item-33"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/e3" title="查看 E3 下的所有文章">E3</a>
+</li>
+	<li class="cat-item cat-item-34"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/%e4%b8%9c%e4%ba%ac%e7%94%b5%e7%8e%a9%e5%b1%95" title="查看 东京电玩展 下的所有文章">东京电玩展</a>
+</li>
+	<li class="cat-item cat-item-35"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/cgdc" title="查看 CGDC 下的所有文章">CGDC</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/gdc" title="查看 GDC 下的所有文章">GDC</a>
+</li>
+	<li class="cat-item cat-item-159"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/%e7%bd%91%e5%8d%9a%e4%bc%9a" title="查看 网博会 下的所有文章">网博会</a>
+</li>
+	<li class="cat-item cat-item-1140"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/%e4%b8%9a%e5%86%85%e6%b4%bb%e5%8a%a8" title="查看 业内活动 下的所有文章">业内活动</a>
+</li>
+	<li class="cat-item cat-item-1289"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/%e9%9f%a9%e5%9b%bd-gstar" title="查看 韩国 Gstar 下的所有文章">韩国 Gstar</a>
+</li>
+	<li class="cat-item cat-item-2431"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/%e6%b8%b8%e6%88%8f%e5%b9%b4%e4%bc%9a-%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8" title="查看 游戏年会 下的所有文章">游戏年会</a>
+</li>
+	<li class="cat-item cat-item-2891"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/gamelook-%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8" title="查看 Gamelook 下的所有文章" class="sf-with-ul">Gamelook<span class="sf-sub-indicator"> »</span></a>
+		<ul class="children" style="display: none; visibility: hidden;">
+	<li class="cat-item cat-item-640"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/gamelook-%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/gamelook-news" title="查看 Gamelook 下的所有文章">Gamelook</a>
+</li>
+	<li class="cat-item cat-item-875"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/gamelook-%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/%e6%b8%b8%e6%b0%91%e5%91%a8%e5%88%8a-%e8%bf%9e%e8%bd%bd%e4%b8%ad" title="查看 游民周刊 连载中 下的所有文章">游民周刊 连载中</a>
+</li>
+		</ul>
+</li>
+	<li class="cat-item cat-item-10133"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/gamecom" title="查看 Gamecom 下的所有文章">Gamecom</a>
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-72"><a href="http://www.gamelook.com.cn/category/news/cg%e5%8a%a8%e7%94%bb-tvc" title="查看 游戏CG动画/配乐/引擎电影 下的所有文章">游戏CG动画/配乐/引擎电影</a>
+</li>
+	<li class="cat-item cat-item-585"><a href="http://www.gamelook.com.cn/category/news/%e6%96%b0%e6%b8%b8%e5%8f%91%e5%b8%83-%e5%b9%b4%e5%ba%a6%e8%b0%83%e7%a0%94%e6%8a%a5%e5%91%8a" title="查看 新游发布 下的所有文章">新游发布</a>
+</li>
+	<li class="cat-item cat-item-1238"><a href="http://www.gamelook.com.cn/category/news/%e5%93%81%e7%89%8c%e6%95%85%e4%ba%8b%e6%b8%b8%e6%88%8f%e5%8f%b2" title="查看 品牌故事/游戏史 下的所有文章">品牌故事/游戏史</a>
+</li>
+	<li class="cat-item cat-item-1541"><a href="http://www.gamelook.com.cn/category/news/%e8%a3%81%e5%91%98-%e4%ba%ba%e5%8a%9b%e8%b5%84%e6%ba%90" title="查看 裁员 下的所有文章">裁员</a>
+</li>
+	<li class="cat-item cat-item-2412"><a href="http://www.gamelook.com.cn/category/news/%e5%ae%98%e5%8f%b8%e7%ba%a0%e7%ba%b7" title="查看 官司/纠纷 下的所有文章">官司/纠纷</a>
+</li>
+	<li class="cat-item cat-item-2646"><a href="http://www.gamelook.com.cn/category/news/%e4%ba%ba%e4%ba%8b%e5%8a%a8%e8%bf%81" title="查看 人事动迁 下的所有文章">人事动迁</a>
+</li>
+	<li class="cat-item cat-item-2692"><a href="http://www.gamelook.com.cn/category/news/%e4%ba%ba%e7%89%a9" title="查看 人物 下的所有文章" class="sf-with-ul">人物<span class="sf-sub-indicator"> »</span></a>
+	<ul class="children" style="display: none; visibility: hidden;">
+	<li class="cat-item cat-item-40"><a href="http://www.gamelook.com.cn/category/news/%e4%ba%ba%e7%89%a9/%e5%90%8d%e4%ba%ba%e5%a0%82" title="查看 名人堂 下的所有文章">名人堂</a>
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-2884"><a href="http://www.gamelook.com.cn/category/news/%e5%93%81%e7%89%8c%e6%96%b0%e9%97%bb" title="查看 品牌新闻 下的所有文章">品牌新闻</a>
+</li>
+	<li class="cat-item cat-item-3053"><a href="http://www.gamelook.com.cn/category/news/%e4%ba%a7%e5%93%81%e5%81%9c%e8%bf%90" title="查看 产品停运 下的所有文章">产品停运</a>
+</li>
+	<li class="cat-item cat-item-3390"><a href="http://www.gamelook.com.cn/category/news/weekly" title="查看 weekly 下的所有文章">weekly</a>
+</li>
+	<li class="cat-item cat-item-3564"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94" title="查看 关联 下的所有文章" class="sf-with-ul">关联<span class="sf-sub-indicator"> »</span></a>
+	<ul class="children" style="display: none; visibility: hidden;">
+	<li class="cat-item cat-item-67"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e5%aa%92%e4%bd%93" title="查看 媒体 下的所有文章">媒体</a>
+</li>
+	<li class="cat-item cat-item-559"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e5%8a%9f%e8%83%bd%e6%b8%b8%e6%88%8f-news" title="查看 功能游戏 下的所有文章">功能游戏</a>
+</li>
+	<li class="cat-item cat-item-641"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e6%b8%b8%e6%88%8f%e6%94%b9%e7%bc%96%e7%94%b5%e5%bd%b1" title="查看 电影/电视剧/节目 下的所有文章">电影/电视剧/节目</a>
+</li>
+	<li class="cat-item cat-item-642"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e5%9c%a8%e7%ba%bf%e5%b0%8f%e8%af%b4" title="查看 电子阅读/数字出版/小说 下的所有文章">电子阅读/数字出版/小说</a>
+</li>
+	<li class="cat-item cat-item-643"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e9%9f%b3%e4%b9%90-%e2%91%a3-%e4%ba%92%e5%8a%a8%e5%a8%b1%e4%b9%90" title="查看 音乐 下的所有文章">音乐</a>
+</li>
+	<li class="cat-item cat-item-644"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e5%8a%a8%e7%94%bb%e6%bc%ab%e7%94%bb" title="查看 动画/漫画 下的所有文章">动画/漫画</a>
+</li>
+	<li class="cat-item cat-item-645"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e4%b8%bb%e9%a2%98%e5%85%ac%e5%9b%ad" title="查看 主题公园/旅游业 下的所有文章">主题公园/旅游业</a>
+</li>
+	<li class="cat-item cat-item-651"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e9%9f%b3%e4%b9%90%e4%bc%9a%e8%88%9e%e5%8f%b0%e5%89%a7" title="查看 音乐会/舞台剧 下的所有文章">音乐会/舞台剧</a>
+</li>
+	<li class="cat-item cat-item-754"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e7%94%b5%e5%ad%90%e7%ab%9e%e6%8a%80-%e2%91%a3-%e4%ba%92%e5%8a%a8%e5%a8%b1%e4%b9%90" title="查看 电子竞技 下的所有文章">电子竞技</a>
+</li>
+	<li class="cat-item cat-item-1120"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e5%8d%95%e6%9c%ba%e6%b8%b8%e6%88%8f" title="查看 单机游戏 下的所有文章">单机游戏</a>
+</li>
+	<li class="cat-item cat-item-2083"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e4%ba%92%e8%81%94%e7%bd%91%e5%ba%94%e7%94%a8" title="查看 互联网应用 下的所有文章">互联网应用</a>
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-4568"><a href="http://www.gamelook.com.cn/category/news/mmo%e6%b5%b7%e5%a4%96" title="查看 海外网游 下的所有文章">海外网游</a>
+</li>
+	<li class="cat-item cat-item-4799"><a href="http://www.gamelook.com.cn/category/news/%e6%b5%b7%e5%a4%96%e4%bc%81%e4%b8%9a%e6%96%b0%e9%97%bb" title="查看 海外企业新闻 下的所有文章">海外企业新闻</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5" title="查看 运营 下的所有文章" class="sf-with-ul">运营<span class="sf-sub-indicator"> »</span></a>
+<ul class="children" style="display: none; visibility: hidden;">
+	<li class="cat-item cat-item-14"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e4%ba%a7%e5%93%81%e7%ae%a1%e7%90%86" title="查看 产品运营/数据挖掘 下的所有文章">产品运营/数据挖掘</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e5%aa%92%e4%bb%8b%e4%b8%8e%e6%b5%8b%e8%af%84" title="查看 媒介与测评 下的所有文章">媒介与测评</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e5%b9%bf%e5%91%8a" title="查看 广告/IGA/游戏植入广告 下的所有文章">广告/IGA/游戏植入广告</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e6%b4%bb%e5%8a%a8%e8%90%a5%e9%94%80" title="查看 线上活动/游戏内活动 下的所有文章">线上活动/游戏内活动</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e7%a4%be%e5%8c%ba%e8%90%a5%e9%94%80" title="查看 社区营销/口碑/炒作 下的所有文章">社区营销/口碑/炒作</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e8%b7%a8%e7%95%8c%e8%90%a5%e9%94%80" title="查看 跨界营销/异业合作 下的所有文章">跨界营销/异业合作</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e8%a1%8d%e7%94%9f%e5%93%81%e5%bc%80%e5%8f%91" title="查看 衍生品开发/周边 下的所有文章">衍生品开发/周边</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e5%ae%a2%e6%88%b7%e6%9c%8d%e5%8a%a1" title="查看 客户服务/CRM/呼叫中心 下的所有文章">客户服务/CRM/呼叫中心</a>
+</li>
+	<li class="cat-item cat-item-68"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e5%b9%bf%e5%91%8a%e6%8a%95%e6%94%be" title="查看 市场推广/广告 下的所有文章">市场推广/广告</a>
+</li>
+	<li class="cat-item cat-item-628"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e7%ba%bf%e4%b8%8b%e6%b4%bb%e5%8a%a8%e8%90%a5%e9%94%80" title="查看 地推/线下活动 下的所有文章">地推/线下活动</a>
+</li>
+	<li class="cat-item cat-item-724"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e4%ba%a7%e5%93%81%e7%bd%91%e7%ab%99%e5%95%86%e5%9f%8eminisite" title="查看 产品网站/商城/minisite 下的所有文章">产品网站/商城/minisite</a>
+</li>
+	<li class="cat-item cat-item-1774"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e8%bd%af%e6%96%87%e8%a7%82%e6%91%a9%e5%8f%b0" title="查看 软文观摩台 下的所有文章">软文观摩台</a>
+</li>
+	<li class="cat-item cat-item-1789"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e8%90%a5%e9%94%80%e4%ba%92%e5%8a%a8%e8%90%a5%e9%94%80" title="查看 案例库/互动营销理论 下的所有文章">案例库/互动营销理论</a>
+</li>
+	<li class="cat-item cat-item-2886"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e4%ba%a7%e5%93%81%e8%af%84%e6%b5%8b%e8%b6%8b%e5%8a%bf" title="查看 产品评测/趋势 下的所有文章">产品评测/趋势</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-24"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91" title="查看 开发 下的所有文章" class="sf-with-ul">开发<span class="sf-sub-indicator"> »</span></a>
+<ul class="children" style="display: none; visibility: hidden;">
+	<li class="cat-item cat-item-25"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e9%a1%b9%e7%9b%ae%e5%bc%80%e5%8f%91%e7%ae%a1%e7%90%86" title="查看 项目开发管理 下的所有文章">项目开发管理</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e5%a4%96%e5%8c%85" title="查看 外包 下的所有文章">外包</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e6%b8%b8%e6%88%8f%e5%bc%95%e6%93%8e%e6%8a%80%e6%9c%af" title="查看 游戏引擎技术 下的所有文章">游戏引擎技术</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e7%a8%8b%e5%ba%8f%e5%bc%80%e5%8f%91" title="查看 程序开发 下的所有文章">程序开发</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e6%b8%b8%e6%88%8f%e7%be%8e%e6%9c%af" title="查看 游戏美术 下的所有文章">游戏美术</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e6%b8%b8%e6%88%8f%e6%b5%8b%e8%af%95" title="查看 游戏测试 下的所有文章">游戏测试</a>
+</li>
+	<li class="cat-item cat-item-58"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e6%b8%b8%e6%88%8f%e7%ad%96%e5%88%92" title="查看 游戏策划 下的所有文章">游戏策划</a>
+</li>
+	<li class="cat-item cat-item-69"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e6%95%b0%e5%80%bc%e7%ad%96%e5%88%92" title="查看 数值策划 下的所有文章">数值策划</a>
+</li>
+	<li class="cat-item cat-item-137"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e5%85%b3%e5%8d%a1%e8%ae%be%e8%ae%a1" title="查看 关卡设计 下的所有文章">关卡设计</a>
+</li>
+	<li class="cat-item cat-item-595"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e7%a1%ac%e4%bb%b6%e6%8a%80%e6%9c%af" title="查看 硬件技术/软件技术 下的所有文章">硬件技术/软件技术</a>
+</li>
+	<li class="cat-item cat-item-10314"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e9%9f%b3%e9%a2%91%e5%88%b6%e4%bd%9c" title="查看 音频制作 下的所有文章">音频制作</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-37"><a href="http://www.gamelook.com.cn/category/%e4%ba%ba%e5%8a%9b%e8%b5%84%e6%ba%90" title="查看 招聘/商务 下的所有文章" class="sf-with-ul">招聘/商务<span class="sf-sub-indicator"> »</span></a>
+<ul class="children" style="display: none; visibility: hidden;">
+	<li class="cat-item cat-item-38"><a href="http://www.gamelook.com.cn/category/%e4%ba%ba%e5%8a%9b%e8%b5%84%e6%ba%90/%e6%8b%9b%e8%81%98%e4%b8%8e%e6%b1%82%e8%81%8c" title="查看 职场/求职经验 下的所有文章">职场/求职经验</a>
+</li>
+	<li class="cat-item cat-item-39"><a href="http://www.gamelook.com.cn/category/%e4%ba%ba%e5%8a%9b%e8%b5%84%e6%ba%90/%e7%ae%a1%e7%90%86%e6%96%b0%e7%9f%a5" title="查看 管理新知 下的所有文章">管理新知</a>
+</li>
+	<li class="cat-item cat-item-782"><a href="http://www.gamelook.com.cn/category/%e4%ba%ba%e5%8a%9b%e8%b5%84%e6%ba%90/%e8%a1%8c%e4%b8%9a%e5%95%86%e5%8a%a1%e4%bf%a1%e6%81%af" title="查看 商务信息 下的所有文章">商务信息</a>
+</li>
+	<li class="cat-item cat-item-783"><a href="http://www.gamelook.com.cn/category/%e4%ba%ba%e5%8a%9b%e8%b5%84%e6%ba%90/%e6%8b%9b%e8%81%98%e4%bf%a1%e6%81%af" title="查看 招聘信息 下的所有文章">招聘信息</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-59"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2" title="查看 网页游戏 下的所有文章" class="sf-with-ul">网页游戏<span class="sf-sub-indicator"> »</span></a>
+<ul class="children" style="display: none; visibility: hidden;">
+	<li class="cat-item cat-item-705"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/%e5%b0%8f%e6%b8%b8%e6%88%8f" title="查看 小游戏 下的所有文章">小游戏</a>
+</li>
+	<li class="cat-item cat-item-4570"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/web%e5%b9%b3%e5%8f%b0" title="查看 web平台 下的所有文章">web平台</a>
+</li>
+	<li class="cat-item cat-item-4587"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/webgame%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90" title="查看 页游产品新闻 下的所有文章">页游产品新闻</a>
+</li>
+	<li class="cat-item cat-item-4606"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/webgame%e6%8a%80%e6%9c%af%e6%96%b0%e9%97%bb" title="查看 webgame技术新闻 下的所有文章">webgame技术新闻</a>
+</li>
+	<li class="cat-item cat-item-4940"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/%e9%a1%b5%e6%b8%b8%e4%bc%81%e4%b8%9a%e6%96%b0%e9%97%bb" title="查看 企业新闻动态 下的所有文章">企业新闻动态</a>
+</li>
+	<li class="cat-item cat-item-4962"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/%e9%a1%b5%e6%b8%b8%e8%bf%90%e8%90%a5%e4%b8%8e%e5%bc%80%e5%8f%91" title="查看 页游运营与开发 下的所有文章" class="sf-with-ul">页游运营与开发<span class="sf-sub-indicator"> »</span></a>
+	<ul class="children" style="display: none; visibility: hidden;">
+	<li class="cat-item cat-item-60"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/%e9%a1%b5%e6%b8%b8%e8%bf%90%e8%90%a5%e4%b8%8e%e5%bc%80%e5%8f%91/webgame%e5%bc%80%e5%8f%91" title="查看 webgame开发 下的所有文章">webgame开发</a>
+</li>
+	<li class="cat-item cat-item-61"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/%e9%a1%b5%e6%b8%b8%e8%bf%90%e8%90%a5%e4%b8%8e%e5%bc%80%e5%8f%91/webgame%e8%bf%90%e8%90%a5%e7%ae%a1%e7%90%86" title="查看 webgame运营管理 下的所有文章">webgame运营管理</a>
+</li>
+	<li class="cat-item cat-item-74"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/%e9%a1%b5%e6%b8%b8%e8%bf%90%e8%90%a5%e4%b8%8e%e5%bc%80%e5%8f%91/webgame%e5%b9%bf%e5%91%8a" title="查看 webgame广告 下的所有文章">webgame广告</a>
+</li>
+	<li class="cat-item cat-item-663"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/%e9%a1%b5%e6%b8%b8%e8%bf%90%e8%90%a5%e4%b8%8e%e5%bc%80%e5%8f%91/webgame%e7%a8%8b%e5%ba%8f" title="查看 webgame程序 下的所有文章">webgame程序</a>
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-4963"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/%e9%a1%b5%e6%b8%b8%e6%95%b0%e6%8d%ae%e6%8a%a5%e5%91%8a" title="查看 页游数据报告 下的所有文章">页游数据报告</a>
+</li>
+	<li class="cat-item cat-item-5551"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/weekly%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f%e5%91%a8%e6%8a%a5" title="查看 weekly网页游戏周报 下的所有文章">weekly网页游戏周报</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-179"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f" title="查看 手机游戏 下的所有文章" class="sf-with-ul">手机游戏<span class="sf-sub-indicator"> »</span></a>
+<ul class="children" style="display: none; visibility: hidden;">
+	<li class="cat-item cat-item-1"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e6%9c%aa%e5%88%86%e7%b1%bb" title="查看 未分类 下的所有文章">未分类</a>
+</li>
+	<li class="cat-item cat-item-180"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91" title="查看 手机游戏开发 下的所有文章">手机游戏开发</a>
+</li>
+	<li class="cat-item cat-item-181"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f%e7%ad%96%e5%88%92" title="查看 手机游戏策划 下的所有文章">手机游戏策划</a>
+</li>
+	<li class="cat-item cat-item-763"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e6%89%8b%e6%9c%ba%e5%b9%b3%e5%8f%b0sns%e5%b9%b3%e5%8f%b0" title="查看 手机平台/移动平台 下的所有文章">手机平台/移动平台</a>
+</li>
+	<li class="cat-item cat-item-2493"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f%e5%b8%82%e5%9c%ba%e5%88%86%e6%9e%90" title="查看 手机游戏数据/报告/分析 下的所有文章">手机游戏数据/报告/分析</a>
+</li>
+	<li class="cat-item cat-item-4184"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/android-%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f" title="查看 android 下的所有文章">android</a>
+</li>
+	<li class="cat-item cat-item-4185"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/apple-ios" title="查看 Apple iOS 下的所有文章">Apple iOS</a>
+</li>
+	<li class="cat-item cat-item-4245"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/windows-phone" title="查看 windows phone 下的所有文章">windows phone</a>
+</li>
+	<li class="cat-item cat-item-4550"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e7%a7%bb%e5%8a%a8%e9%a2%86%e5%9f%9f%e6%8a%95%e8%9e%8d%e8%b5%84%e4%ba%8b%e4%bb%b6" title="查看 移动平台投资/融资/IPO 下的所有文章">移动平台投资/融资/IPO</a>
+</li>
+	<li class="cat-item cat-item-4613"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f%e4%bc%81%e4%b8%9a%e5%8a%a8%e6%80%81" title="查看 手机游戏企业动态 下的所有文章">手机游戏企业动态</a>
+</li>
+	<li class="cat-item cat-item-4668"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f%e4%ba%a7%e5%93%81%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90" title="查看 手机游戏产品/产品分析 下的所有文章">手机游戏产品/产品分析</a>
+</li>
+	<li class="cat-item cat-item-4823"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e7%a1%ac%e4%bb%b6%e5%8f%8a%e7%bb%88%e7%ab%af" title="查看 硬件及终端 下的所有文章">硬件及终端</a>
+</li>
+	<li class="cat-item cat-item-5074"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e5%bc%80%e5%8f%91%e5%b7%a5%e5%85%b7%e6%8a%80%e6%9c%af" title="查看 开发工具/技术 下的所有文章">开发工具/技术</a>
+</li>
+	<li class="cat-item cat-item-5351"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/weekly-%e7%a7%bb%e5%8a%a8%e6%b8%b8%e6%88%8f" title="查看 weekly 移动游戏 下的所有文章">weekly 移动游戏</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-639"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba%e5%88%9b%e4%b8%9a" title="查看 社交游戏 下的所有文章" class="sf-with-ul">社交游戏<span class="sf-sub-indicator"> »</span></a>
+<ul class="children" style="display: none; visibility: hidden;">
+	<li class="cat-item cat-item-357"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba%e5%88%9b%e4%b8%9a/%e7%a4%be%e4%ba%a4%e6%b8%b8%e6%88%8f" title="查看 社交游戏公司动态 下的所有文章">社交游戏公司动态</a>
+</li>
+	<li class="cat-item cat-item-1764"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba%e5%88%9b%e4%b8%9a/%e7%a4%be%e4%ba%a4%e7%bd%91%e7%bb%9c" title="查看 社交网络/平台 下的所有文章">社交网络/平台</a>
+</li>
+	<li class="cat-item cat-item-4547"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba%e5%88%9b%e4%b8%9a/%e7%a4%be%e4%ba%a4%e6%b8%b8%e6%88%8f%e4%ba%a7%e5%93%81" title="查看 社交游戏产品/分析 下的所有文章">社交游戏产品/分析</a>
+</li>
+	<li class="cat-item cat-item-4548"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba%e5%88%9b%e4%b8%9a/%e7%a4%be%e4%ba%a4%e6%b8%b8%e6%88%8f%e6%95%b0%e6%8d%ae" title="查看 社交游戏数据 下的所有文章">社交游戏数据</a>
+</li>
+	<li class="cat-item cat-item-4549"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba%e5%88%9b%e4%b8%9a/%e7%a4%be%e4%ba%a4%e6%8a%95%e8%9e%8d%e8%b5%84%e4%ba%8b%e4%bb%b6" title="查看 社交游戏投资/融资/IPO 下的所有文章">社交游戏投资/融资/IPO</a>
+</li>
+	<li class="cat-item cat-item-5349"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba%e5%88%9b%e4%b8%9a/%e7%a4%be%e4%ba%a4%e6%b8%b8%e6%88%8f%e5%91%a8%e6%8a%a5weekly" title="查看 社交游戏周报weekly 下的所有文章">社交游戏周报weekly</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-984"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a" title="查看 投资/创业 下的所有文章" class="sf-with-ul">投资/创业<span class="sf-sub-indicator"> »</span></a>
+<ul class="children" style="display: none; visibility: hidden;">
+	<li class="cat-item cat-item-62"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e5%88%9b%e4%b8%9a%e9%a3%8e%e9%99%a9%e6%8a%95%e8%b5%84" title="查看 创业/风险投资 下的所有文章">创业/风险投资</a>
+</li>
+	<li class="cat-item cat-item-212"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e9%a3%8e%e9%99%a9%e6%8a%95%e8%b5%84" title="查看 风险投资 下的所有文章">风险投资</a>
+</li>
+	<li class="cat-item cat-item-410"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e5%8e%82%e5%95%86%e8%b4%a2%e6%8a%a5%e8%b4%a2%e6%8a%a5%e5%af%b9%e6%af%94%e5%88%86%e6%9e%90" title="查看 中国大陆厂商财报 下的所有文章">中国大陆厂商财报</a>
+</li>
+	<li class="cat-item cat-item-500"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e9%a3%8e%e9%99%a9%e6%8a%95%e8%b5%84%e8%b5%84%e6%9c%ac%e5%90%88%e4%bd%9c" title="查看 投资/并购/IPO 下的所有文章">投资/并购/IPO</a>
+</li>
+	<li class="cat-item cat-item-2887"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e6%8a%95%e8%b5%84%e5%88%86%e6%9e%90" title="查看 投行报告/投资评级 下的所有文章">投行报告/投资评级</a>
+</li>
+	<li class="cat-item cat-item-3975"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e6%8a%95%e8%b5%84%e8%b6%8b%e5%8a%bf%e8%a7%82%e7%82%b9" title="查看 投资趋势/观点 下的所有文章">投资趋势/观点</a>
+</li>
+	<li class="cat-item cat-item-4564"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e9%9f%a9%e5%9b%bd%e5%8e%82%e5%95%86%e8%b4%a2%e6%8a%a5" title="查看 韩国厂商财报 下的所有文章">韩国厂商财报</a>
+</li>
+	<li class="cat-item cat-item-4565"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e6%97%a5%e6%9c%ac%e5%8e%82%e5%95%86%e8%b4%a2%e6%8a%a5" title="查看 日本厂商财报 下的所有文章">日本厂商财报</a>
+</li>
+	<li class="cat-item cat-item-4566"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e6%ac%a7%e7%be%8e%e5%8e%82%e5%95%86%e8%b4%a2%e6%8a%a5" title="查看 欧美厂商财报 下的所有文章">欧美厂商财报</a>
+</li>
+	<li class="cat-item cat-item-4567"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e5%8f%b0%e6%b9%be%e5%8e%82%e5%95%86%e8%b4%a2%e6%8a%a5" title="查看 台湾厂商财报 下的所有文章">台湾厂商财报</a>
+</li>
+	<li class="cat-item cat-item-6156"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/weekly-%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba%e5%91%a8%e6%8a%a5" title="查看 weekly 资本市场周报 下的所有文章">weekly 资本市场周报</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-2476"><a href="http://www.gamelook.com.cn/category/wiixboxps3" title="查看 电视游戏 下的所有文章" class="sf-with-ul">电视游戏<span class="sf-sub-indicator"> »</span></a>
+<ul class="children" style="display: none; visibility: hidden;">
+	<li class="cat-item cat-item-4554"><a href="http://www.gamelook.com.cn/category/wiixboxps3/xboxkinect%e5%be%ae%e8%bd%af" title="查看 XBOX/Kinect微软 下的所有文章">XBOX/Kinect微软</a>
+</li>
+	<li class="cat-item cat-item-4555"><a href="http://www.gamelook.com.cn/category/wiixboxps3/ps3sony" title="查看 PS3/SONY 下的所有文章">PS3/SONY</a>
+</li>
+	<li class="cat-item cat-item-4556"><a href="http://www.gamelook.com.cn/category/wiixboxps3/wii%e4%bb%bb%e5%a4%a9%e5%a0%82" title="查看 WII/任天堂 下的所有文章">WII/任天堂</a>
+</li>
+	<li class="cat-item cat-item-4557"><a href="http://www.gamelook.com.cn/category/wiixboxps3/%e7%94%b5%e8%a7%86%e6%b8%b8%e6%88%8f%e6%95%b0%e6%8d%ae%e6%8a%a5%e5%91%8a%e5%88%86%e6%9e%90" title="查看 电视游戏数据/报告/分析 下的所有文章">电视游戏数据/报告/分析</a>
+</li>
+	<li class="cat-item cat-item-4558"><a href="http://www.gamelook.com.cn/category/wiixboxps3/%e4%ba%91%e8%ae%a1%e7%ae%97onlivegaikai" title="查看 云计算Onlive/Gaikai 下的所有文章">云计算Onlive/Gaikai</a>
+</li>
+	<li class="cat-item cat-item-4559"><a href="http://www.gamelook.com.cn/category/wiixboxps3/googletvappletv" title="查看 GoogleTV/AppleTV 下的所有文章">GoogleTV/AppleTV</a>
+</li>
+	<li class="cat-item cat-item-4560"><a href="http://www.gamelook.com.cn/category/wiixboxps3/%e8%81%94%e6%83%b3ebox" title="查看 联想eBOX/其他主机 下的所有文章">联想eBOX/其他主机</a>
+</li>
+	<li class="cat-item cat-item-4561"><a href="http://www.gamelook.com.cn/category/wiixboxps3/%e7%9b%b8%e5%85%b3%e6%96%b0%e9%97%bb" title="查看 相关新闻 下的所有文章">相关新闻</a>
+</li>
+	<li class="cat-item cat-item-4562"><a href="http://www.gamelook.com.cn/category/wiixboxps3/%e7%94%b5%e8%a7%86%e6%b8%b8%e6%88%8f%e4%ba%a7%e5%93%81" title="查看 电视游戏产品 下的所有文章">电视游戏产品</a>
+</li>
+	<li class="cat-item cat-item-4983"><a href="http://www.gamelook.com.cn/category/wiixboxps3/%e4%ba%92%e8%81%94%e7%bd%91%e7%94%b5%e8%a7%86" title="查看 互联网电视 下的所有文章">互联网电视</a>
+</li>
+	<li class="cat-item cat-item-15192"><a href="http://www.gamelook.com.cn/category/wiixboxps3/ps4sony" title="查看 PS4/SONY 下的所有文章">PS4/SONY</a>
+</li>
+	<li class="cat-item cat-item-15420"><a href="http://www.gamelook.com.cn/category/wiixboxps3/xbox-one%e5%be%ae%e8%bd%af" title="查看 Xbox One/微软 下的所有文章">Xbox One/微软</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-2885"><a href="http://www.gamelook.com.cn/category/%e8%a7%82%e7%82%b9%e5%88%86%e6%9e%90%e8%af%84%e6%b5%8b" title="查看 观点/分析 下的所有文章" class="sf-with-ul">观点/分析<span class="sf-sub-indicator"> »</span></a>
+<ul class="children" style="display: none; visibility: hidden;">
+	<li class="cat-item cat-item-8"><a href="http://www.gamelook.com.cn/category/%e8%a7%82%e7%82%b9%e5%88%86%e6%9e%90%e8%af%84%e6%b5%8b/%e4%ba%ba%e7%89%a9%e8%a7%82%e7%82%b9" title="查看 人物观点 下的所有文章">人物观点</a>
+</li>
+	<li class="cat-item cat-item-57"><a href="http://www.gamelook.com.cn/category/%e8%a7%82%e7%82%b9%e5%88%86%e6%9e%90%e8%af%84%e6%b5%8b/%e4%ba%ba%e7%89%a9%e4%b8%93%e8%ae%bf" title="查看 人物专访 下的所有文章">人物专访</a>
+</li>
+	<li class="cat-item cat-item-140"><a href="http://www.gamelook.com.cn/category/%e8%a7%82%e7%82%b9%e5%88%86%e6%9e%90%e8%af%84%e6%b5%8b/%e7%83%ad%e8%be%a3%e7%82%b9%e8%af%84" title="查看 热辣点评 下的所有文章">热辣点评</a>
+</li>
+	<li class="cat-item cat-item-679"><a href="http://www.gamelook.com.cn/category/%e8%a7%82%e7%82%b9%e5%88%86%e6%9e%90%e8%af%84%e6%b5%8b/%e6%b7%b1%e5%ba%a6%e8%af%9d%e9%a2%98" title="查看 深度话题 下的所有文章">深度话题</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-2888"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba" title="查看 数据/报告 下的所有文章" class="sf-with-ul">数据/报告<span class="sf-sub-indicator"> »</span></a>
+<ul class="children" style="display: none; visibility: hidden;">
+	<li class="cat-item cat-item-11"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba/%e6%94%bf%e7%ad%96%e5%8a%a8%e6%80%81" title="查看 政策动态/解读 下的所有文章">政策动态/解读</a>
+</li>
+	<li class="cat-item cat-item-63"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba/%e8%a1%8c%e4%b8%9a%e8%96%aa%e9%85%ac" title="查看 行业薪酬 下的所有文章">行业薪酬</a>
+</li>
+	<li class="cat-item cat-item-65"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba/%e6%b8%a0%e9%81%93" title="查看 渠道/支付/虚拟交易 下的所有文章">渠道/支付/虚拟交易</a>
+</li>
+	<li class="cat-item cat-item-66"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba/%e6%b8%b8%e6%88%8f%e8%a1%8c%e4%b8%9a" title="查看 游戏产业数据 下的所有文章">游戏产业数据</a>
+</li>
+	<li class="cat-item cat-item-73"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba/%e6%b6%88%e8%b4%b9%e8%80%85%e7%a0%94%e7%a9%b6" title="查看 消费者研究 下的所有文章">消费者研究</a>
+</li>
+	<li class="cat-item cat-item-2358"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba/%e6%b3%95%e5%be%8b%e6%b3%95%e8%a7%84" title="查看 法律法规 下的所有文章">法律法规</a>
+</li>
+	<li class="cat-item cat-item-2892"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba/%e7%bb%84%e7%bb%87%e7%bb%93%e6%9e%84-%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba" title="查看 组织结构 下的所有文章">组织结构</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-4551"><a href="http://www.gamelook.com.cn/category/%e6%8e%8c%e6%9c%ba-2" title="查看 掌机 下的所有文章" class="sf-with-ul">掌机<span class="sf-sub-indicator"> »</span></a>
+<ul class="children" style="display: none; visibility: hidden;">
+	<li class="cat-item cat-item-96"><a href="http://www.gamelook.com.cn/category/%e6%8e%8c%e6%9c%ba-2/%e6%8e%8c%e6%9c%ba" title="查看 掌机市场分析/报告/数据 下的所有文章">掌机市场分析/报告/数据</a>
+</li>
+	<li class="cat-item cat-item-4552"><a href="http://www.gamelook.com.cn/category/%e6%8e%8c%e6%9c%ba-2/pspngp" title="查看 PSP/NGP 下的所有文章">PSP/NGP</a>
+</li>
+	<li class="cat-item cat-item-4553"><a href="http://www.gamelook.com.cn/category/%e6%8e%8c%e6%9c%ba-2/3dsds" title="查看 3DS/DS 下的所有文章">3DS/DS</a>
+</li>
+	<li class="cat-item cat-item-8104"><a href="http://www.gamelook.com.cn/category/%e6%8e%8c%e6%9c%ba-2/%e7%b4%a2%e5%b0%bcps-vita" title="查看 索尼/PS Vita 下的所有文章">索尼/PS Vita</a>
+</li>
+</ul>
+</li>
+				</ul>
+			 
+        
+	</div> <!--end #cat-nav-->
+
+	<div id="breadcrumb" class="clear">
+		<span class="current-time">四月 23, 2014 11:48 上午</span>
+		You are here:<a class="home" href="http://www.gamelook.com.cn/">Home</a>  <a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f" title="查看 手机游戏 的全部文章">手机游戏</a>  <a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91" title="查看 手机游戏开发 的全部文章">手机游戏开发</a>  <span class="current">CocoStudio实例:[进击的小怪物]制作教程</span>	</div>
+	
+	<div id="main" class="clear">
+<div id="container">
+	<div id="content">
+<center></center>
+
+				<div id="post-139820" class="post-139820 post type-post hentry category-180 tag-cocostudio tag-8489 tag-14754">
+			<h1 class="entry-title">CocoStudio实例:[进击的小怪物]制作教程</h1>
+			<div class="entry-meta">
+
+				<span class="meta-author">Posted by <a href="http://www.gamelook.com.cn/author/amy/" title="由 amy 发表">amy</a></span>
+				<span class="meta-date">on 2013.12.19</span>
+				<span class="meta-cat">in <a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91" title="查看 手机游戏开发 的全部文章" rel="category tag">手机游戏开发</a></span>
+				<span class="meta-sep">|</span>
+				<span class="meta-comments"><a href="http://www.gamelook.com.cn/2013/12/139820#comments" title="CocoStudio实例:[进击的小怪物]制作教程 上的评论">1条评论</a></span>
+							</div> <!--end .entry-meta-->
+
+			<div class="entry entry-content">
+
+<div id="ckepop">
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style"><span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_weixin" title="分享到微信"><span class="jiathis_txt jtico jtico_weixin"></span></a>
+<a class="jiathis_button_tsina" title="分享到新浪微博"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+<a class="jiathis_button_tqq" title="分享到腾讯微博"><span class="jiathis_txt jtico jtico_tqq"></span></a>
+<a class="jiathis_button_qzone" title="分享到QQ空间"><span class="jiathis_txt jtico jtico_qzone"></span></a>
+<a class="jiathis_button_evernote" title="分享到EverNote"><span class="jiathis_txt jtico jtico_evernote"></span></a>
+<a class="jiathis_button_fb" title="分享到Facebook"><span class="jiathis_txt jtico jtico_fb"></span></a>
+<a class="jiathis_button_twitter" title="分享到Twitter"><span class="jiathis_txt jtico jtico_twitter"></span></a>
+<a href="http://www.jiathis.com/share?uid=1506259" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config={
+	data_track_clickback:true,
+	summary:"",
+	pic:"http://ww3.sinaimg.cn/large/6274760fgw1ea3bbx7b0aj20f0078mz0.jpg",
+	shortUrl:false,
+	hideMore:true
+}
+</script>
+<script type="text/javascript" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jia.js" charset="utf-8"></script><script type="text/javascript" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/plugin.client.js" charset="utf-8"></script><div style="position:absolute;width:0px;height:0px;"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="0" height="0" id="JIATHISSWF" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab"><param name="allowScriptAccess" value="always"><param name="swLiveConnect" value="true"><param name="movie" value="http://www.jiathis.com/code/swf/m.swf"><param name="FlashVars" value="z=a"><embed name="JIATHISSWF" src="http://www.jiathis.com/code/swf/m.swf" flashvars="z=a" width="0" height="0" allowscriptaccess="always" swliveconnect="true" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></object></div>
+<!-- JiaThis Button END -->
+
+</div><br>
+				<p>GameLook报道 / 《进击的小怪物》是一款全新三消游戏，超萌外星小怪物，华丽梦幻的消除特效，强力炫酷的道具，游戏中各种萌死人的动作时怎么做出来的么？请往下看~~</p>
+<p>进击的小怪物中很多动作都是在CocoStudio种制作的，今天带领大家使用帧动画技术完成下图中的变色模式下的舱门特效。</p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-139822" title="jjxgw" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw.jpg" alt="" width="550"></p>
+<p>一：创建工程</p>
+<p>1,打开cocostudio启动器，在启动器找到动作编辑器（Animation Editor，第一个编辑器）</p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-139823" title="jjxgw1" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw1.jpg" alt="" width="550"></p>
+<p style="text-align: left;">2,创建一个新的项目</p>
+<p style="text-align: left;">在菜单栏中的的文件菜单（Alt+F）中选择第一个新建项目（Ctrl+N）</p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-139824" title="jjxgw2" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw2.jpg" alt="" width="550"></p>
+<p>3, 设置项目名称</p>
+<p>给当前项目取一个名称，这个项目名称结合自己的项目找一个规律的名称即可，但是注意不要在项目名称中添加中文或特殊字符，习惯命名加空格的建议用下划线”_”代替。名称修改后建议将路径设为自己动作管理的路径中，不建议直接使用桌面文件夹，因为桌面在系统奔溃后无法恢复，且在XP系统下可能会出现打开失败的问题。</p>
+<p style="text-align: center;"><img class="size-full wp-image-139825 aligncenter" title="jjxgw3" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw3.jpg" alt="" width="550"></p>
+<p>二：添加资源</p>
+<p style="text-align: left;">1,准备资源</p>
+<p style="text-align: left;"><span style="text-align: center;">我们提前已经准备了切图资源，这些都是一些PNG图片，这是其中一个变色舱门的帧动画的所用到的图片，我这里将这些图放在一个独立的文件夹中，另还有一个小怪物的动画。</span></p>
+<p style="text-align: center;"><img class="size-full wp-image-139826 aligncenter" title="jjxgw4" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw4.jpg" alt="" width="472" height="246"></p>
+<p style="text-align: left;">
+</p><p style="text-align: left;">2,添加到编辑器<br>
+我们将这两个文件放直接拖拽到资源面板中（也可以通过导入的方式加进来，但拖拽更人性化一些）。</p>
+<p style="text-align: center;"><img class="size-full wp-image-139828 aligncenter" title="jjxgw5b" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw5b.jpg" alt="" width="550"></p>
+<p>3,检查资源</p>
+<p>导入后的资源面板，这个面板中有一个根节点叫做“Resources”，因为cocos2d-x图片数据的特殊管理方式，这里的文件都是建议提前整理好路径关系的，至少保证不随意修改已有文件的结构。</p>
+<p>另外在整个项目中（整个游戏项目）建议不要使用同名的图片或资源，保证所有的文件即使是在一个文件内也不会有重名的冲突。</p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-139829" title="jjxgw5" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw51.jpg" alt="" width="319" height="422"></p>
+<p>三：创建layer节点</p>
+<p>帧动画是一种比较简单的动画，里面只有普通的layer层，这个layer主要用来是显示图像信息的，所以只需要在资源面板中拖一张图片到渲染区即可(注意：一定要在形体模式下哦~~)。</p>
+<p>我们找了一个彩色的背景图片，先加进来（这个层级默认是按照添加先后排序，也可以手动修改）。</p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-139830" title="jjxgw6" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw6.jpg" alt="" width="550"></p>
+<p>接下来再加一个舱门层。我们取标号为0的舱门层图片，这几张连续的图片是组成一个动画的关键。<br>
+但是拖拽的时候注意拖到渲染的空白区域，如果拖到已有贴图的地方会有冲突。</p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-139831" title="jjxgw7" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw7.jpg" alt="" width="565" height="382"></p>
+<p>接下来，修该舱门层的坐标位置，设置为（0,0）点。底层也检查下是否为（0,0）点。</p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-139832" title="jjxgw8" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw8.jpg" alt="" width="560" height="377"></p>
+<p>四：为layer配置多资源</p>
+<p>Layer是一个显示贴图的层容器，但它可是能放很多东西的哦~因为这个动画需要重复利用这两个layer来实现多个动画，所以我们可以先为layer配置多个贴图资源。</p>
+<p>我们先选中底图layer，并在资源面板中将几个彩色背景一起选中（按住Ctrl再用鼠标点击）并加到“渲染资源”属性里。</p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-139833" title="jjxgw9" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw9.jpg" alt="" width="584" height="391"></p>
+<p style="text-align: center;">舱门层同理</p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-139834" title="jjxgw10" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw10.jpg" alt="" width="571" height="383"></p>
+<p>为了查看效果可以在“渲染资源”属性中选择随意选取一个图片看渲染区是否有改变。</p>
+<p>五：制作一个简单的旋转动画</p>
+<p>这个动画的背景是一个旋转的效果，虽然效果很炫，但是别担心，这只是一个属性变化，So easy！<br>
+我们先要选中底图layer（这里是layer1），然后在指定的帧新建一帧，此时编辑器会将两帧链接起来。我们选中尾帧，并将“旋转”属性设置为“-360.00”。这样一个旋转动画已经完成。点击播放查看效果。</p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-139835" title="jjxgw11" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw11.jpg" alt="" width="577" height="395"></p>
+<p>六：制作序列帧动画</p>
+<p>这个时光舱除了有很炫的旋转外还有一个舱门开启与关闭的特效。否则怎么能叫时空舱呢。<br>
+不过这个舱门和背景用的技术不同，它是用序列帧动画来实现的。不过这个和上一个动画一样容易实现。</p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-139836" title="jjxgw12" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw12.jpg" alt="" width="571" height="384"></p>
+<p>步骤：</p>
+<p>选中layer2，修改属性“序列帧间隔”，这个值默认是5，表示每一帧的间隔为5帧。我们修改为3。这个取决于你的图片变化程度，变化比较大的话尽量减小这个值，以加强视觉效果。</p>
+<p>接下来在资源面板选中编号1到7的几张图片，并拖拽到动画帧的对象上。然后•••就没有然后了~~~直接看效果吧~</p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-139837" title="jjxgw13" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw13.jpg" alt="" width="313" height="209"></p>
+<p>【注释：这是一个gif动画图片，需要在网页上（或其他工具）才能显示】</p>
+<p>七：制作多个动画</p>
+<p>这里的几个帧动画都是极其类似的，只有底图的颜色不同而已。所以我们可以利用复制动画的功能快速创建多个动画。</p>
+<p>步骤：在动作列表，选中Animation1,点击鼠标右键，选择复制动画。</p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-139838" title="jjxgw14" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw14.jpg" alt="" width="557" height="245"></p>
+<p>复制后的动画是和第一个动画是完全相同的。我们选择layer直接修改贴图即可。</p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-139839" title="jjxgw15" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw15.jpg" alt="" width="556" height="371"></p>
+<p>步骤：选择layer1的第一帧，在“渲染资源”属性中选择一个新的贴图。这里只有两帧，因为尾帧的贴图是否替换并没有什么影响，所以可以偷个懒。</p>
+<p>其他的几个动画也使用相同的修改方法。</p>
+<p>八：整理</p>
+<p>1,修改动作名称<br>
+为了方便管理，我们需要对各个动作的名称做统一的管理。点击动画，右键菜单选择重命名（F2）。</p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-139840" title="jjxgw16" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw16.jpg" alt="" width="533" height="293"></p>
+<p>2：整理帧</p>
+<p>由于开始设置的背景动画时长和舱门关闭动画时长不同，我们可以将背景层的尾帧直接拖拽到和layer2尾帧相同的位置。</p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-139842" title="jjxgw17" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jjxgw17.jpg" alt="" width="532" height="176"></p>
+<p>九：小结</p>
+<p>通过上面的八个步骤我们已经完成了这个舱门的制作，通过简单的拖拽和属性修改即可完成漂亮的动画，相信对于程序来说一定节省了很多工作量，美术也可以很容易的上手，而且对于最终的安装包能减少很大的体积，特别如果你的游戏中有比较大的人物形象的话，在CocoStudio 中还提供了骨骼动画的支持，原来做一个人物可能需要10M图片，现在可能几百K就搞定了。看到这里是不是很心动了呢？赶快到CocoStudio.org官网下载最新版本体验一下吧~~</p>
+<h3 class="related_post_title">延伸阅读</h3><ul class="related_post"><li>2013.12.20 -- <a href="http://www.gamelook.com.cn/2013/12/139980" title="触控岁末三连击:3款手游产品iOS连发">触控岁末三连击:3款手游产品iOS连发</a> (0)</li><li>2014.04.17 -- <a href="http://www.gamelook.com.cn/2014/04/155484" title="触控广告平台正式上线:墙、插屏啥都有">触控广告平台正式上线:墙、插屏啥都有</a> (0)</li><li>2014.03.27 -- <a href="http://www.gamelook.com.cn/2014/03/151938" title="IP的力量《秦时明月》今日公测:免费榜第3">IP的力量《秦时明月》今日公测:免费榜第3</a> (0)</li><li>2014.03.24 -- <a href="http://www.gamelook.com.cn/2014/03/151229" title="触控洪亮:拿IP要平衡研发运营和成本因素">触控洪亮:拿IP要平衡研发运营和成本因素</a> (0)</li><li>2014.03.20 -- <a href="http://www.gamelook.com.cn/2014/03/150605" title="陈昊芝:为何坚定做引擎?信心大小来自信仰">陈昊芝:为何坚定做引擎?信心大小来自信仰</a> (7)</li></ul>							</div> <!--end .entry-->
+
+			<div id="entry-tags"><span>Tags:</span>&nbsp;<a href="http://www.gamelook.com.cn/tag/cocostudio" rel="tag">CocoStudio</a>, <a href="http://www.gamelook.com.cn/tag/%e8%a7%a6%e6%8e%a7" rel="tag">触控</a>, <a href="http://www.gamelook.com.cn/tag/%e8%bf%9b%e5%87%bb%e7%9a%84%e5%b0%8f%e6%80%aa%e7%89%a9" rel="tag">进击的小怪物</a></div>
+			<center><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/gamelookweixin.jpg"></center>
+		</div>
+
+		<a name="comments"></a>
+
+<div class="ds-thread" data-thread-key="139820" data-author-key="298" data-title="CocoStudio实例:[进击的小怪物]制作教程" data-url="http://www.gamelook.com.cn/2013/12/139820" id="ds-thread"><div id="ds-reset"><div class="ds-comments-info"><div class="ds-sort"><a class="ds-order-desc">最新</a><a class="ds-order-asc ds-current">最早</a><a class="ds-order-hot">最热</a></div><ul class="ds-comments-tabs"><li class="ds-tab"><a class="ds-comments-tab-duoshuo ds-current" href="javascript:void(0);"><span class="ds-highlight">1</span>条评论</a></li></ul></div><ul class="ds-comments"><li class="ds-post" data-post-id="1328788389481702409"><div class="ds-post-self" data-post-id="1328788389481702409" data-thread-id="1328788389480137855" data-root-id="0" data-source="duoshuo"><div class="ds-avatar" data-user-id="5639200"><a rel="nofollow author" target="_blank" href="http://weibo.com/dengta2014" onclick="this.href=&#39;http://gamelook.duoshuo.com/user-url/?user_id=5639200&#39;;" title="小塔"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/100" alt="小塔"></a></div><div class="ds-comment-body"><div class="ds-comment-header"><a class="ds-user-name ds-highlight" data-qqt-account="" href="http://weibo.com/dengta2014" onclick="this.href=&#39;http://gamelook.duoshuo.com/user-url/?user_id=5639200&#39;;" rel="nofollow" target="_blank" data-user-id="5639200">小塔</a></div><p>那个帧动画是怎么回事啊，拖过去就是不能播放啊。</p><div class="ds-comment-footer ds-comment-actions"><span class="ds-time" datetime="2014-03-08T12:59:01+08:00" title="2014年3月8日 下午12:59:01">3月8日</span><a class="ds-post-reply" href="javascript:void(0);"><span class="ds-icon ds-icon-reply"></span>回复</a><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span>顶</a><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发</a><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报</a></div></div></div></li></ul><div class="ds-paginator" style="display: none;"><div class="ds-border"></div><a data-page="1" href="javascript:void(0);" class="ds-current">1</a></div><a name="respond"></a><div class="ds-login-buttons"><p>社交帐号登录:</p><div class="ds-social-links"><ul class="ds-service-list"><li><a href="http://gamelook.duoshuo.com/login/weibo/?sso=1&redirect_uri=http%3A%2F%2Fwww.gamelook.com.cn%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.gamelook.com.cn%252F2013%252F12%252F139820" rel="nofollow" class="ds-service-link ds-weibo">微博</a></li><li><a href="http://gamelook.duoshuo.com/login/qq/?sso=1&redirect_uri=http%3A%2F%2Fwww.gamelook.com.cn%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.gamelook.com.cn%252F2013%252F12%252F139820" rel="nofollow" class="ds-service-link ds-qq">QQ</a></li><li><a href="http://gamelook.duoshuo.com/login/renren/?sso=1&redirect_uri=http%3A%2F%2Fwww.gamelook.com.cn%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.gamelook.com.cn%252F2013%252F12%252F139820" rel="nofollow" class="ds-service-link ds-renren">人人</a></li><li><a href="http://gamelook.duoshuo.com/login/douban/?sso=1&redirect_uri=http%3A%2F%2Fwww.gamelook.com.cn%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.gamelook.com.cn%252F2013%252F12%252F139820" rel="nofollow" class="ds-service-link ds-douban">豆瓣</a></li><li><a class="ds-more-services" href="javascript:void(0)">更多»</a></li></ul><ul class="ds-service-list ds-additional-services"><li><a href="http://gamelook.duoshuo.com/login/kaixin/?sso=1&redirect_uri=http%3A%2F%2Fwww.gamelook.com.cn%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.gamelook.com.cn%252F2013%252F12%252F139820" rel="nofollow" class="ds-service-link ds-kaixin">开心</a></li><li><a href="http://gamelook.duoshuo.com/login/netease/?sso=1&redirect_uri=http%3A%2F%2Fwww.gamelook.com.cn%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.gamelook.com.cn%252F2013%252F12%252F139820" rel="nofollow" class="ds-service-link ds-netease">网易</a></li><li><a href="http://gamelook.duoshuo.com/login/sohu/?sso=1&redirect_uri=http%3A%2F%2Fwww.gamelook.com.cn%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.gamelook.com.cn%252F2013%252F12%252F139820" rel="nofollow" class="ds-service-link ds-sohu">搜狐</a></li><li><a href="http://gamelook.duoshuo.com/login/baidu/?sso=1&redirect_uri=http%3A%2F%2Fwww.gamelook.com.cn%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.gamelook.com.cn%252F2013%252F12%252F139820" rel="nofollow" class="ds-service-link ds-baidu">百度</a></li><li><a href="http://gamelook.duoshuo.com/login/google/?sso=1&redirect_uri=http%3A%2F%2Fwww.gamelook.com.cn%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.gamelook.com.cn%252F2013%252F12%252F139820" rel="nofollow" class="ds-service-link ds-google">谷歌</a></li></ul></div></div><div class="ds-replybox"><a class="ds-avatar" href="javascript:void(0);" onclick="return false"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/noavatar_default.png" alt=""></a><form method="post"><input type="hidden" name="thread_id" value="1328788389480137855">
+<input type="hidden" name="parent_id" value="">
+<input type="hidden" name="nonce" value="53573e1a9eec9"><div class="ds-textarea-wrapper ds-rounded-top"><textarea name="message" title="Ctrl+Enter快捷提交" placeholder="说点什么吧…"></textarea><pre class="ds-hidden-text"></pre></div><div class="ds-post-toolbar"><div class="ds-post-options ds-gradient-bg"><span class="ds-sync"></span></div><button class="ds-post-button" type="submit">发布</button><div class="ds-toolbar-buttons"><a class="ds-toolbar-button ds-add-emote" title="插入表情"></a></div></div></form></div><p class="ds-powered-by"><a href="http://duoshuo.com/" target="_blank" rel="nofollow">多说</a></p></div></div>
+
+<script type="text/javascript">
+	if (typeof DUOSHUO !== 'undefined')
+		DUOSHUO.EmbedThread('.ds-thread');
+</script>
+	<div id="ds-ssr">
+
+		
+            <ol id="commentlist">
+                		<li class="comment even thread-even depth-1" id="li-comment-34447">
+			<article id="comment-34447" class="comment">
+				<footer class="comment-meta">
+					<cite class="comment-author vcard">
+						<span class="fn"><a href="http://weibo.com/dengta2014" rel="external nofollow" class="url">小塔</a></span> on <a rel="nofollow" href="http://www.gamelook.com.cn/2013/12/139820/comment-page-1#comment-34447"><time pubdate="" datetime="2014-03-08T12:59:01+00:00">2014.03.08 at 12:59</time></a> <span class="says">said:</span>					</cite><!-- .comment-author .vcard -->
+				</footer>
+	
+				<div class="comment-content"><p>那个帧动画是怎么回事啊，拖过去就是不能播放啊。</p>
+</div>
+				
+			</article><!-- #comment-## -->
+		</li>
+            </ol>
+
+		            
+    </div>	</div><!--end #content -->
+</div><!--end #container -->
+<div id="sidebar">
+		
+		<div id="top-sidebar">
+		<div id="text-27" class="widget widget_text"><h3 class="widget-title">订阅/广告</h3>			<div class="textwidget"><a href="http://feed.feedsky.com/GameLook" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/rss.png" alt="RSS订阅"></a>
+<a href="http://weibo.com/GameLook" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/sina.jpg" alt="新浪微博订阅"></a>
+<a href="http://t.qq.com/GameLookblog" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/qqwb.jpg" alt="腾讯微博订阅"></a>
+<a href="http://www.gamelook.com.cn/?page_id=2221" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/qq.gif" alt="加入我们的QQ群"></a>
+<br>
+<a href="http://www.gamelook.com.cn/2012/08/89780" target="_blank"> ◎手游平台商务通讯录</a>
+<a href="http://www.gamelook.com.cn/2013/12/139544" target="_blank"> ◎S/A级手游指标汇总</a>
+<br>
+<a href="http://cnrdn.com/rplD" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/pps.gif"></a>
+<a href="http://cnrdn.com/jWsD" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/talkingdata.gif"></a>
+<a href="http://cnrdn.com/quXC" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/langang4.gif"></a>
+<a href="http://cnrdn.com/OVtC" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/zsy.gif"></a>
+<a href="http://cnrdn.com/uDn5" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/dena3.gif"></a>
+<a href="http://cnrdn.com/25z7" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/chengtianyou.gif"></a>
+<a href="http://cnrdn.com/sOCD" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/feiliu14.gif"></a>
+<a href="http://cnrdn.com/FyFD" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/guanqu.gif"></a>
+<a href="http://cnrdn.com/pGUD" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/wanxie.gif"></a>
+<a href="http://cnrdn.com/0zXD" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/37wan2.gif"></a>
+<a href="http://cnrdn.com/3glD" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/renyou2.gif"></a>
+<a href="http://cnrdn.com/sYCB" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/quyou.gif"></a>
+<a href="http://cnrdn.com/dbf8" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/glu.gif"><p></p>
+</a><a href="http://cnrdn.com/t7v5" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/molin.gif"><p></p>
+</a><a href="http://cnrdn.com/DXA5" target="_blank"><img src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/feiyu01.gif"></a></div>
+		</div><div id="rss-6" class="widget widget_rss"><h3 class="widget-title"><a class="rsswidget" href="http://www.gamelook.com.cn/category/%e4%ba%ba%e5%8a%9b%e8%b5%84%e6%ba%90/%e6%8b%9b%e8%81%98%e4%bf%a1%e6%81%af/feed" title="订阅此内容"><img style="border:0" width="14" height="14" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/rss(1).png" alt="RSS"></a> <a class="rsswidget" href="http://www.gamelook.com.cn/" title="">业内招聘</a></h3><ul><li><a class="rsswidget" href="http://www.gamelook.com.cn/2014/04/119514" title="墨麟集团是一家专业的全球化娱乐内容研发及发行公司，集团成立于2011年11月，总部设于中国深圳。集团旗下分别由深圳墨麒、深圳墨一、成都墨龙、成都墨灵、上海灵娱、上海墨鹍、上海磨叽8个子公司组成，拥有员工1000余人。陆续推出了《秦美人》《战龙三国》《热血屠龙》《大裁决》《大闹天宫》等网页游戏产品。简历投递邮箱：hr@mokylin.com […]">墨麟(深圳/成都/上海)聘:策划/美术/运营/程序/商务等</a></li><li><a class="rsswidget" href="http://www.gamelook.com.cn/2014/04/147612" title="37游戏诚聘:页游研发——项目经理/制作人、主策划、服务端主程、客户端主程、主美、高级UI设计师（工作地点：广州、成都）;页游运营——业务发展部总监（商务总监）、产品总监/经理、项目经理/运营经理、平台运营经理、推广策划经理、媒介商务主管 （工作地点：广州）,hr@i37wan.net […]">37游戏(广州/成都)聘:制作人/主策/主程/主美/商务/运营/市场等</a></li><li><a class="rsswidget" href="http://www.gamelook.com.cn/2014/04/108453" title="飞流（FL）是全球移动游戏发行与运营服务商。飞流(京)聘:运营/策划/PM/市场/游戏评测，工作地：北京。有意者请发送简历发送至 jinyan@feiliu.com (标题写明方向即可) […]">飞流(京)聘:运营/策划/PM/市场/游戏评测</a></li><li><a class="rsswidget" href="http://www.gamelook.com.cn/2014/04/146111" title="北京玩蟹科技有限公司成立于2009年，目前上线了《大掌门》、《忍将》、《乱世曲》、《King of Gods》，逐步成为以2D、3D为基础的多条产品线，现诚聘策划/美术/程序/运营/市场/数据等职位，工作地：北京，请投递简历至hr@playcrab.com，注明 ‘来自Gamelook’ 。 […]">玩蟹(北京)聘:策划/美术/程序/运营/市场等</a></li><li><a class="rsswidget" href="http://www.gamelook.com.cn/2014/04/135083" title="趣游科技集团有限公司，是中国网页游戏行业的引领者，趣游总部位于北京，分别在厦门、成都、上海、广州设有分/子公司。现诚聘：主策划、主美术、服务器端主程序。有意者请投递简历至zhaopin001@gamewave.net […]">趣游(北京)聘:C++/2D3D美术/数值/运营</a></li><li><a class="rsswidget" href="http://www.gamelook.com.cn/2014/04/132274" title="Glu是全球领先的智能手机和平板设备免费游戏的开发商和发行商,自2001年成立以来已经为玩家创造了许多精品游戏. 有意者请发送简历至 careers.cn@glu.com (请注明简历来源) ，工作地：北京 […]">GLU(北京)聘：数值/主策/QA /BD/ 交互设计/繁体字中文翻译/运维/运营</a></li><li><a class="rsswidget" href="http://www.gamelook.com.cn/2014/04/112035" title="在AppAnnie公布的2012年全球移动游戏公司收入排名上，Kabam 2012年移动游戏全年收入位居全球第11位。Kabam北京工作室诚邀各界有志之士的加盟。诚聘:手游制作人/美术/特效/程序/测试等。工作地：北京 简历请投递: bingl@kabam.com […]">Kabam(北京)聘:制作人/美术/特效/程序/测试/文案/运营/运维/招聘专员</a></li><li><a class="rsswidget" href="http://www.gamelook.com.cn/2014/04/83636" title="T4GAME呈天游成立于2008年，是中国领先的多平台网络游戏开发商和运营商。现招聘运营总监、项目经理、Flash业务逻辑工程师、java服务器逻辑工程师、主策划、美术UI、2D/3D特效师、C引擎工程师、C业务逻辑工程师。简历请投递 hr@t4game.com ，工作地：北京 […]">T4GAME呈天游(北京)聘:运营专员/主美/FLASH/C引擎程序/JAVA/3D美术</a></li><li><a class="rsswidget" href="http://www.gamelook.com.cn/2014/04/144375" title="上海冠趣科技有限公司（game3top7）成立于2012年初，专注于网页游戏，移动互联网游戏的新锐互动娱乐公司。现诚聘，技术总监/程序/运维/主策/主美/美术，工作地：上海，简历请投递：gamelook@3top7.com […]">上海（冠趣）聘PHP开发工程师/SDK接入工程师/主美/资深渠道经理/技术总监/程序/主策划/美术/</a></li><li><a class="rsswidget" href="http://www.gamelook.com.cn/2014/04/152701" title="PPS游戏是成立于2008年的综合性游戏平台，网罗时下热门精品游戏，覆盖PC、移动双平台，2014年，PPS游戏持续发展，稳中求变，独具匠心地整合旗下运营平台、游戏大厅及游戏视频三方资源，力图打造一个能满足用户多种诉求的特色平台。现诚聘运营/市场/商务/程序/运维/原画/UI等，工作地：上海，简历请投递hr-g@ppstream.com […]">PPS(上海)聘:运营/市场/商务/程序/运维/原画/UI等</a></li><li><a class="rsswidget" href="http://www.gamelook.com.cn/2014/04/152640" title="上海刃游网络是一支具备多年游戏研究心得和手游研发经验的团队。现诚聘制作人/技术总监/美术/策划/运维/QA/HR等职务，有意者请投递简历至jobs@haymakergame.com […]">刃游(上海)聘:制作人/技术总监/美术/策划/运维/QA/HR</a></li><li><a class="rsswidget" href="http://www.gamelook.com.cn/2014/03/141611" title="中国手游集团有限公司拥有员工1000名，核心游戏研发人员450名，公司分布于北京、上海、成都、深圳、香港，CMGE中国手游是国内首家登陆纳斯达克资本市场的手机游戏公司。现诚聘数据分析师、媒介主管、韩语、运营，简历请投递fastlane-bjhr@cmge.com […]">CMGE中国手游诚邀各地游戏英才加盟</a></li><li><a class="rsswidget" href="http://www.gamelook.com.cn/2014/03/138028" title="蓝港在线（北京）聘：Unity3D/C++ /Java /市场产品经理/媒介/海外/产品运营/主美/特效/UI，工作地点：北京望京，简历请投递：job@8864.com […]">蓝港在线（北京）聘:Unity3D/C++ /Java /市场产品经理/媒介/海外/产品运营/原画/特效/UI</a></li></ul></div>	</div> <!--end #top-sidebar-->
+				
+</div> <!--end #sidebar--></div><!--end #main-->
+  
+	<div id="footer">
+		<div class="footer-cat">
+		
+								<ul>
+						<li class="first"><a href="http://www.gamelook.com.cn/">Home</a></li>
+							<li class="cat-item cat-item-5"><a href="http://www.gamelook.com.cn/category/news" title="查看 News 下的所有文章">News</a>
+<ul class="children">
+	<li class="cat-item cat-item-6"><a href="http://www.gamelook.com.cn/category/news/%e5%9b%bd%e5%86%85%e6%96%b0%e9%97%bb" title="查看 国内新闻 下的所有文章">国内新闻</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://www.gamelook.com.cn/category/news/%e4%b8%9a%e5%8a%a1%e8%bf%81%e5%be%99" title="查看 产品代理/联合运营 下的所有文章">产品代理/联合运营</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="http://www.gamelook.com.cn/category/news/%e5%85%ab%e5%8d%a6%e5%b0%8f%e9%81%93" title="查看 八卦小道 下的所有文章">八卦小道</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8" title="查看 活动 下的所有文章">活动</a>
+	<ul class="children">
+	<li class="cat-item cat-item-32"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/chinajoy" title="查看 Chinajoy 下的所有文章">Chinajoy</a>
+</li>
+	<li class="cat-item cat-item-33"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/e3" title="查看 E3 下的所有文章">E3</a>
+</li>
+	<li class="cat-item cat-item-34"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/%e4%b8%9c%e4%ba%ac%e7%94%b5%e7%8e%a9%e5%b1%95" title="查看 东京电玩展 下的所有文章">东京电玩展</a>
+</li>
+	<li class="cat-item cat-item-35"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/cgdc" title="查看 CGDC 下的所有文章">CGDC</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/gdc" title="查看 GDC 下的所有文章">GDC</a>
+</li>
+	<li class="cat-item cat-item-159"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/%e7%bd%91%e5%8d%9a%e4%bc%9a" title="查看 网博会 下的所有文章">网博会</a>
+</li>
+	<li class="cat-item cat-item-1140"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/%e4%b8%9a%e5%86%85%e6%b4%bb%e5%8a%a8" title="查看 业内活动 下的所有文章">业内活动</a>
+</li>
+	<li class="cat-item cat-item-1289"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/%e9%9f%a9%e5%9b%bd-gstar" title="查看 韩国 Gstar 下的所有文章">韩国 Gstar</a>
+</li>
+	<li class="cat-item cat-item-2431"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/%e6%b8%b8%e6%88%8f%e5%b9%b4%e4%bc%9a-%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8" title="查看 游戏年会 下的所有文章">游戏年会</a>
+</li>
+	<li class="cat-item cat-item-2891"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/gamelook-%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8" title="查看 Gamelook 下的所有文章">Gamelook</a>
+		<ul class="children">
+	<li class="cat-item cat-item-640"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/gamelook-%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/gamelook-news" title="查看 Gamelook 下的所有文章">Gamelook</a>
+</li>
+	<li class="cat-item cat-item-875"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/gamelook-%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/%e6%b8%b8%e6%b0%91%e5%91%a8%e5%88%8a-%e8%bf%9e%e8%bd%bd%e4%b8%ad" title="查看 游民周刊 连载中 下的所有文章">游民周刊 连载中</a>
+</li>
+		</ul>
+</li>
+	<li class="cat-item cat-item-10133"><a href="http://www.gamelook.com.cn/category/news/%e6%b8%b8%e6%88%8f%e5%b1%95%e8%a1%8c%e4%b8%9a%e6%b4%bb%e5%8a%a8/gamecom" title="查看 Gamecom 下的所有文章">Gamecom</a>
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-72"><a href="http://www.gamelook.com.cn/category/news/cg%e5%8a%a8%e7%94%bb-tvc" title="查看 游戏CG动画/配乐/引擎电影 下的所有文章">游戏CG动画/配乐/引擎电影</a>
+</li>
+	<li class="cat-item cat-item-585"><a href="http://www.gamelook.com.cn/category/news/%e6%96%b0%e6%b8%b8%e5%8f%91%e5%b8%83-%e5%b9%b4%e5%ba%a6%e8%b0%83%e7%a0%94%e6%8a%a5%e5%91%8a" title="查看 新游发布 下的所有文章">新游发布</a>
+</li>
+	<li class="cat-item cat-item-1238"><a href="http://www.gamelook.com.cn/category/news/%e5%93%81%e7%89%8c%e6%95%85%e4%ba%8b%e6%b8%b8%e6%88%8f%e5%8f%b2" title="查看 品牌故事/游戏史 下的所有文章">品牌故事/游戏史</a>
+</li>
+	<li class="cat-item cat-item-1541"><a href="http://www.gamelook.com.cn/category/news/%e8%a3%81%e5%91%98-%e4%ba%ba%e5%8a%9b%e8%b5%84%e6%ba%90" title="查看 裁员 下的所有文章">裁员</a>
+</li>
+	<li class="cat-item cat-item-2412"><a href="http://www.gamelook.com.cn/category/news/%e5%ae%98%e5%8f%b8%e7%ba%a0%e7%ba%b7" title="查看 官司/纠纷 下的所有文章">官司/纠纷</a>
+</li>
+	<li class="cat-item cat-item-2646"><a href="http://www.gamelook.com.cn/category/news/%e4%ba%ba%e4%ba%8b%e5%8a%a8%e8%bf%81" title="查看 人事动迁 下的所有文章">人事动迁</a>
+</li>
+	<li class="cat-item cat-item-2692"><a href="http://www.gamelook.com.cn/category/news/%e4%ba%ba%e7%89%a9" title="查看 人物 下的所有文章">人物</a>
+	<ul class="children">
+	<li class="cat-item cat-item-40"><a href="http://www.gamelook.com.cn/category/news/%e4%ba%ba%e7%89%a9/%e5%90%8d%e4%ba%ba%e5%a0%82" title="查看 名人堂 下的所有文章">名人堂</a>
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-2884"><a href="http://www.gamelook.com.cn/category/news/%e5%93%81%e7%89%8c%e6%96%b0%e9%97%bb" title="查看 品牌新闻 下的所有文章">品牌新闻</a>
+</li>
+	<li class="cat-item cat-item-3053"><a href="http://www.gamelook.com.cn/category/news/%e4%ba%a7%e5%93%81%e5%81%9c%e8%bf%90" title="查看 产品停运 下的所有文章">产品停运</a>
+</li>
+	<li class="cat-item cat-item-3390"><a href="http://www.gamelook.com.cn/category/news/weekly" title="查看 weekly 下的所有文章">weekly</a>
+</li>
+	<li class="cat-item cat-item-3564"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94" title="查看 关联 下的所有文章">关联</a>
+	<ul class="children">
+	<li class="cat-item cat-item-67"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e5%aa%92%e4%bd%93" title="查看 媒体 下的所有文章">媒体</a>
+</li>
+	<li class="cat-item cat-item-559"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e5%8a%9f%e8%83%bd%e6%b8%b8%e6%88%8f-news" title="查看 功能游戏 下的所有文章">功能游戏</a>
+</li>
+	<li class="cat-item cat-item-641"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e6%b8%b8%e6%88%8f%e6%94%b9%e7%bc%96%e7%94%b5%e5%bd%b1" title="查看 电影/电视剧/节目 下的所有文章">电影/电视剧/节目</a>
+</li>
+	<li class="cat-item cat-item-642"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e5%9c%a8%e7%ba%bf%e5%b0%8f%e8%af%b4" title="查看 电子阅读/数字出版/小说 下的所有文章">电子阅读/数字出版/小说</a>
+</li>
+	<li class="cat-item cat-item-643"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e9%9f%b3%e4%b9%90-%e2%91%a3-%e4%ba%92%e5%8a%a8%e5%a8%b1%e4%b9%90" title="查看 音乐 下的所有文章">音乐</a>
+</li>
+	<li class="cat-item cat-item-644"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e5%8a%a8%e7%94%bb%e6%bc%ab%e7%94%bb" title="查看 动画/漫画 下的所有文章">动画/漫画</a>
+</li>
+	<li class="cat-item cat-item-645"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e4%b8%bb%e9%a2%98%e5%85%ac%e5%9b%ad" title="查看 主题公园/旅游业 下的所有文章">主题公园/旅游业</a>
+</li>
+	<li class="cat-item cat-item-651"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e9%9f%b3%e4%b9%90%e4%bc%9a%e8%88%9e%e5%8f%b0%e5%89%a7" title="查看 音乐会/舞台剧 下的所有文章">音乐会/舞台剧</a>
+</li>
+	<li class="cat-item cat-item-754"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e7%94%b5%e5%ad%90%e7%ab%9e%e6%8a%80-%e2%91%a3-%e4%ba%92%e5%8a%a8%e5%a8%b1%e4%b9%90" title="查看 电子竞技 下的所有文章">电子竞技</a>
+</li>
+	<li class="cat-item cat-item-1120"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e5%8d%95%e6%9c%ba%e6%b8%b8%e6%88%8f" title="查看 单机游戏 下的所有文章">单机游戏</a>
+</li>
+	<li class="cat-item cat-item-2083"><a href="http://www.gamelook.com.cn/category/news/%e5%85%b3%e8%81%94/%e4%ba%92%e8%81%94%e7%bd%91%e5%ba%94%e7%94%a8" title="查看 互联网应用 下的所有文章">互联网应用</a>
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-4568"><a href="http://www.gamelook.com.cn/category/news/mmo%e6%b5%b7%e5%a4%96" title="查看 海外网游 下的所有文章">海外网游</a>
+</li>
+	<li class="cat-item cat-item-4799"><a href="http://www.gamelook.com.cn/category/news/%e6%b5%b7%e5%a4%96%e4%bc%81%e4%b8%9a%e6%96%b0%e9%97%bb" title="查看 海外企业新闻 下的所有文章">海外企业新闻</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5" title="查看 运营 下的所有文章">运营</a>
+<ul class="children">
+	<li class="cat-item cat-item-14"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e4%ba%a7%e5%93%81%e7%ae%a1%e7%90%86" title="查看 产品运营/数据挖掘 下的所有文章">产品运营/数据挖掘</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e5%aa%92%e4%bb%8b%e4%b8%8e%e6%b5%8b%e8%af%84" title="查看 媒介与测评 下的所有文章">媒介与测评</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e5%b9%bf%e5%91%8a" title="查看 广告/IGA/游戏植入广告 下的所有文章">广告/IGA/游戏植入广告</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e6%b4%bb%e5%8a%a8%e8%90%a5%e9%94%80" title="查看 线上活动/游戏内活动 下的所有文章">线上活动/游戏内活动</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e7%a4%be%e5%8c%ba%e8%90%a5%e9%94%80" title="查看 社区营销/口碑/炒作 下的所有文章">社区营销/口碑/炒作</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e8%b7%a8%e7%95%8c%e8%90%a5%e9%94%80" title="查看 跨界营销/异业合作 下的所有文章">跨界营销/异业合作</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e8%a1%8d%e7%94%9f%e5%93%81%e5%bc%80%e5%8f%91" title="查看 衍生品开发/周边 下的所有文章">衍生品开发/周边</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e5%ae%a2%e6%88%b7%e6%9c%8d%e5%8a%a1" title="查看 客户服务/CRM/呼叫中心 下的所有文章">客户服务/CRM/呼叫中心</a>
+</li>
+	<li class="cat-item cat-item-68"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e5%b9%bf%e5%91%8a%e6%8a%95%e6%94%be" title="查看 市场推广/广告 下的所有文章">市场推广/广告</a>
+</li>
+	<li class="cat-item cat-item-628"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e7%ba%bf%e4%b8%8b%e6%b4%bb%e5%8a%a8%e8%90%a5%e9%94%80" title="查看 地推/线下活动 下的所有文章">地推/线下活动</a>
+</li>
+	<li class="cat-item cat-item-724"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e4%ba%a7%e5%93%81%e7%bd%91%e7%ab%99%e5%95%86%e5%9f%8eminisite" title="查看 产品网站/商城/minisite 下的所有文章">产品网站/商城/minisite</a>
+</li>
+	<li class="cat-item cat-item-1774"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e8%bd%af%e6%96%87%e8%a7%82%e6%91%a9%e5%8f%b0" title="查看 软文观摩台 下的所有文章">软文观摩台</a>
+</li>
+	<li class="cat-item cat-item-1789"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e8%90%a5%e9%94%80%e4%ba%92%e5%8a%a8%e8%90%a5%e9%94%80" title="查看 案例库/互动营销理论 下的所有文章">案例库/互动营销理论</a>
+</li>
+	<li class="cat-item cat-item-2886"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e8%bf%90%e8%90%a5/%e4%ba%a7%e5%93%81%e8%af%84%e6%b5%8b%e8%b6%8b%e5%8a%bf" title="查看 产品评测/趋势 下的所有文章">产品评测/趋势</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-24"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91" title="查看 开发 下的所有文章">开发</a>
+<ul class="children">
+	<li class="cat-item cat-item-25"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e9%a1%b9%e7%9b%ae%e5%bc%80%e5%8f%91%e7%ae%a1%e7%90%86" title="查看 项目开发管理 下的所有文章">项目开发管理</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e5%a4%96%e5%8c%85" title="查看 外包 下的所有文章">外包</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e6%b8%b8%e6%88%8f%e5%bc%95%e6%93%8e%e6%8a%80%e6%9c%af" title="查看 游戏引擎技术 下的所有文章">游戏引擎技术</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e7%a8%8b%e5%ba%8f%e5%bc%80%e5%8f%91" title="查看 程序开发 下的所有文章">程序开发</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e6%b8%b8%e6%88%8f%e7%be%8e%e6%9c%af" title="查看 游戏美术 下的所有文章">游戏美术</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e6%b8%b8%e6%88%8f%e6%b5%8b%e8%af%95" title="查看 游戏测试 下的所有文章">游戏测试</a>
+</li>
+	<li class="cat-item cat-item-58"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e6%b8%b8%e6%88%8f%e7%ad%96%e5%88%92" title="查看 游戏策划 下的所有文章">游戏策划</a>
+</li>
+	<li class="cat-item cat-item-69"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e6%95%b0%e5%80%bc%e7%ad%96%e5%88%92" title="查看 数值策划 下的所有文章">数值策划</a>
+</li>
+	<li class="cat-item cat-item-137"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e5%85%b3%e5%8d%a1%e8%ae%be%e8%ae%a1" title="查看 关卡设计 下的所有文章">关卡设计</a>
+</li>
+	<li class="cat-item cat-item-595"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e7%a1%ac%e4%bb%b6%e6%8a%80%e6%9c%af" title="查看 硬件技术/软件技术 下的所有文章">硬件技术/软件技术</a>
+</li>
+	<li class="cat-item cat-item-10314"><a href="http://www.gamelook.com.cn/category/%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91/%e9%9f%b3%e9%a2%91%e5%88%b6%e4%bd%9c" title="查看 音频制作 下的所有文章">音频制作</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-37"><a href="http://www.gamelook.com.cn/category/%e4%ba%ba%e5%8a%9b%e8%b5%84%e6%ba%90" title="查看 招聘/商务 下的所有文章">招聘/商务</a>
+<ul class="children">
+	<li class="cat-item cat-item-38"><a href="http://www.gamelook.com.cn/category/%e4%ba%ba%e5%8a%9b%e8%b5%84%e6%ba%90/%e6%8b%9b%e8%81%98%e4%b8%8e%e6%b1%82%e8%81%8c" title="查看 职场/求职经验 下的所有文章">职场/求职经验</a>
+</li>
+	<li class="cat-item cat-item-39"><a href="http://www.gamelook.com.cn/category/%e4%ba%ba%e5%8a%9b%e8%b5%84%e6%ba%90/%e7%ae%a1%e7%90%86%e6%96%b0%e7%9f%a5" title="查看 管理新知 下的所有文章">管理新知</a>
+</li>
+	<li class="cat-item cat-item-782"><a href="http://www.gamelook.com.cn/category/%e4%ba%ba%e5%8a%9b%e8%b5%84%e6%ba%90/%e8%a1%8c%e4%b8%9a%e5%95%86%e5%8a%a1%e4%bf%a1%e6%81%af" title="查看 商务信息 下的所有文章">商务信息</a>
+</li>
+	<li class="cat-item cat-item-783"><a href="http://www.gamelook.com.cn/category/%e4%ba%ba%e5%8a%9b%e8%b5%84%e6%ba%90/%e6%8b%9b%e8%81%98%e4%bf%a1%e6%81%af" title="查看 招聘信息 下的所有文章">招聘信息</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-59"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2" title="查看 网页游戏 下的所有文章">网页游戏</a>
+<ul class="children">
+	<li class="cat-item cat-item-705"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/%e5%b0%8f%e6%b8%b8%e6%88%8f" title="查看 小游戏 下的所有文章">小游戏</a>
+</li>
+	<li class="cat-item cat-item-4570"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/web%e5%b9%b3%e5%8f%b0" title="查看 web平台 下的所有文章">web平台</a>
+</li>
+	<li class="cat-item cat-item-4587"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/webgame%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90" title="查看 页游产品新闻 下的所有文章">页游产品新闻</a>
+</li>
+	<li class="cat-item cat-item-4606"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/webgame%e6%8a%80%e6%9c%af%e6%96%b0%e9%97%bb" title="查看 webgame技术新闻 下的所有文章">webgame技术新闻</a>
+</li>
+	<li class="cat-item cat-item-4940"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/%e9%a1%b5%e6%b8%b8%e4%bc%81%e4%b8%9a%e6%96%b0%e9%97%bb" title="查看 企业新闻动态 下的所有文章">企业新闻动态</a>
+</li>
+	<li class="cat-item cat-item-4962"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/%e9%a1%b5%e6%b8%b8%e8%bf%90%e8%90%a5%e4%b8%8e%e5%bc%80%e5%8f%91" title="查看 页游运营与开发 下的所有文章">页游运营与开发</a>
+	<ul class="children">
+	<li class="cat-item cat-item-60"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/%e9%a1%b5%e6%b8%b8%e8%bf%90%e8%90%a5%e4%b8%8e%e5%bc%80%e5%8f%91/webgame%e5%bc%80%e5%8f%91" title="查看 webgame开发 下的所有文章">webgame开发</a>
+</li>
+	<li class="cat-item cat-item-61"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/%e9%a1%b5%e6%b8%b8%e8%bf%90%e8%90%a5%e4%b8%8e%e5%bc%80%e5%8f%91/webgame%e8%bf%90%e8%90%a5%e7%ae%a1%e7%90%86" title="查看 webgame运营管理 下的所有文章">webgame运营管理</a>
+</li>
+	<li class="cat-item cat-item-74"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/%e9%a1%b5%e6%b8%b8%e8%bf%90%e8%90%a5%e4%b8%8e%e5%bc%80%e5%8f%91/webgame%e5%b9%bf%e5%91%8a" title="查看 webgame广告 下的所有文章">webgame广告</a>
+</li>
+	<li class="cat-item cat-item-663"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/%e9%a1%b5%e6%b8%b8%e8%bf%90%e8%90%a5%e4%b8%8e%e5%bc%80%e5%8f%91/webgame%e7%a8%8b%e5%ba%8f" title="查看 webgame程序 下的所有文章">webgame程序</a>
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-4963"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/%e9%a1%b5%e6%b8%b8%e6%95%b0%e6%8d%ae%e6%8a%a5%e5%91%8a" title="查看 页游数据报告 下的所有文章">页游数据报告</a>
+</li>
+	<li class="cat-item cat-item-5551"><a href="http://www.gamelook.com.cn/category/%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f-2/weekly%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f%e5%91%a8%e6%8a%a5" title="查看 weekly网页游戏周报 下的所有文章">weekly网页游戏周报</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-179"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f" title="查看 手机游戏 下的所有文章">手机游戏</a>
+<ul class="children">
+	<li class="cat-item cat-item-1"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e6%9c%aa%e5%88%86%e7%b1%bb" title="查看 未分类 下的所有文章">未分类</a>
+</li>
+	<li class="cat-item cat-item-180"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91" title="查看 手机游戏开发 下的所有文章">手机游戏开发</a>
+</li>
+	<li class="cat-item cat-item-181"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f%e7%ad%96%e5%88%92" title="查看 手机游戏策划 下的所有文章">手机游戏策划</a>
+</li>
+	<li class="cat-item cat-item-763"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e6%89%8b%e6%9c%ba%e5%b9%b3%e5%8f%b0sns%e5%b9%b3%e5%8f%b0" title="查看 手机平台/移动平台 下的所有文章">手机平台/移动平台</a>
+</li>
+	<li class="cat-item cat-item-2493"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f%e5%b8%82%e5%9c%ba%e5%88%86%e6%9e%90" title="查看 手机游戏数据/报告/分析 下的所有文章">手机游戏数据/报告/分析</a>
+</li>
+	<li class="cat-item cat-item-4184"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/android-%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f" title="查看 android 下的所有文章">android</a>
+</li>
+	<li class="cat-item cat-item-4185"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/apple-ios" title="查看 Apple iOS 下的所有文章">Apple iOS</a>
+</li>
+	<li class="cat-item cat-item-4245"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/windows-phone" title="查看 windows phone 下的所有文章">windows phone</a>
+</li>
+	<li class="cat-item cat-item-4550"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e7%a7%bb%e5%8a%a8%e9%a2%86%e5%9f%9f%e6%8a%95%e8%9e%8d%e8%b5%84%e4%ba%8b%e4%bb%b6" title="查看 移动平台投资/融资/IPO 下的所有文章">移动平台投资/融资/IPO</a>
+</li>
+	<li class="cat-item cat-item-4613"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f%e4%bc%81%e4%b8%9a%e5%8a%a8%e6%80%81" title="查看 手机游戏企业动态 下的所有文章">手机游戏企业动态</a>
+</li>
+	<li class="cat-item cat-item-4668"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f%e4%ba%a7%e5%93%81%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90" title="查看 手机游戏产品/产品分析 下的所有文章">手机游戏产品/产品分析</a>
+</li>
+	<li class="cat-item cat-item-4823"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e7%a1%ac%e4%bb%b6%e5%8f%8a%e7%bb%88%e7%ab%af" title="查看 硬件及终端 下的所有文章">硬件及终端</a>
+</li>
+	<li class="cat-item cat-item-5074"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/%e5%bc%80%e5%8f%91%e5%b7%a5%e5%85%b7%e6%8a%80%e6%9c%af" title="查看 开发工具/技术 下的所有文章">开发工具/技术</a>
+</li>
+	<li class="cat-item cat-item-5351"><a href="http://www.gamelook.com.cn/category/%e2%98%85%e6%89%8b%e6%9c%ba%e6%b8%b8%e6%88%8f/weekly-%e7%a7%bb%e5%8a%a8%e6%b8%b8%e6%88%8f" title="查看 weekly 移动游戏 下的所有文章">weekly 移动游戏</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-639"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba%e5%88%9b%e4%b8%9a" title="查看 社交游戏 下的所有文章">社交游戏</a>
+<ul class="children">
+	<li class="cat-item cat-item-357"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba%e5%88%9b%e4%b8%9a/%e7%a4%be%e4%ba%a4%e6%b8%b8%e6%88%8f" title="查看 社交游戏公司动态 下的所有文章">社交游戏公司动态</a>
+</li>
+	<li class="cat-item cat-item-1764"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba%e5%88%9b%e4%b8%9a/%e7%a4%be%e4%ba%a4%e7%bd%91%e7%bb%9c" title="查看 社交网络/平台 下的所有文章">社交网络/平台</a>
+</li>
+	<li class="cat-item cat-item-4547"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba%e5%88%9b%e4%b8%9a/%e7%a4%be%e4%ba%a4%e6%b8%b8%e6%88%8f%e4%ba%a7%e5%93%81" title="查看 社交游戏产品/分析 下的所有文章">社交游戏产品/分析</a>
+</li>
+	<li class="cat-item cat-item-4548"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba%e5%88%9b%e4%b8%9a/%e7%a4%be%e4%ba%a4%e6%b8%b8%e6%88%8f%e6%95%b0%e6%8d%ae" title="查看 社交游戏数据 下的所有文章">社交游戏数据</a>
+</li>
+	<li class="cat-item cat-item-4549"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba%e5%88%9b%e4%b8%9a/%e7%a4%be%e4%ba%a4%e6%8a%95%e8%9e%8d%e8%b5%84%e4%ba%8b%e4%bb%b6" title="查看 社交游戏投资/融资/IPO 下的所有文章">社交游戏投资/融资/IPO</a>
+</li>
+	<li class="cat-item cat-item-5349"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba%e5%88%9b%e4%b8%9a/%e7%a4%be%e4%ba%a4%e6%b8%b8%e6%88%8f%e5%91%a8%e6%8a%a5weekly" title="查看 社交游戏周报weekly 下的所有文章">社交游戏周报weekly</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-984"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a" title="查看 投资/创业 下的所有文章">投资/创业</a>
+<ul class="children">
+	<li class="cat-item cat-item-62"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e5%88%9b%e4%b8%9a%e9%a3%8e%e9%99%a9%e6%8a%95%e8%b5%84" title="查看 创业/风险投资 下的所有文章">创业/风险投资</a>
+</li>
+	<li class="cat-item cat-item-212"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e9%a3%8e%e9%99%a9%e6%8a%95%e8%b5%84" title="查看 风险投资 下的所有文章">风险投资</a>
+</li>
+	<li class="cat-item cat-item-410"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e5%8e%82%e5%95%86%e8%b4%a2%e6%8a%a5%e8%b4%a2%e6%8a%a5%e5%af%b9%e6%af%94%e5%88%86%e6%9e%90" title="查看 中国大陆厂商财报 下的所有文章">中国大陆厂商财报</a>
+</li>
+	<li class="cat-item cat-item-500"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e9%a3%8e%e9%99%a9%e6%8a%95%e8%b5%84%e8%b5%84%e6%9c%ac%e5%90%88%e4%bd%9c" title="查看 投资/并购/IPO 下的所有文章">投资/并购/IPO</a>
+</li>
+	<li class="cat-item cat-item-2887"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e6%8a%95%e8%b5%84%e5%88%86%e6%9e%90" title="查看 投行报告/投资评级 下的所有文章">投行报告/投资评级</a>
+</li>
+	<li class="cat-item cat-item-3975"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e6%8a%95%e8%b5%84%e8%b6%8b%e5%8a%bf%e8%a7%82%e7%82%b9" title="查看 投资趋势/观点 下的所有文章">投资趋势/观点</a>
+</li>
+	<li class="cat-item cat-item-4564"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e9%9f%a9%e5%9b%bd%e5%8e%82%e5%95%86%e8%b4%a2%e6%8a%a5" title="查看 韩国厂商财报 下的所有文章">韩国厂商财报</a>
+</li>
+	<li class="cat-item cat-item-4565"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e6%97%a5%e6%9c%ac%e5%8e%82%e5%95%86%e8%b4%a2%e6%8a%a5" title="查看 日本厂商财报 下的所有文章">日本厂商财报</a>
+</li>
+	<li class="cat-item cat-item-4566"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e6%ac%a7%e7%be%8e%e5%8e%82%e5%95%86%e8%b4%a2%e6%8a%a5" title="查看 欧美厂商财报 下的所有文章">欧美厂商财报</a>
+</li>
+	<li class="cat-item cat-item-4567"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/%e5%8f%b0%e6%b9%be%e5%8e%82%e5%95%86%e8%b4%a2%e6%8a%a5" title="查看 台湾厂商财报 下的所有文章">台湾厂商财报</a>
+</li>
+	<li class="cat-item cat-item-6156"><a href="http://www.gamelook.com.cn/category/%e6%8a%95%e8%b5%84%e5%88%9b%e4%b8%9a/weekly-%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba%e5%91%a8%e6%8a%a5" title="查看 weekly 资本市场周报 下的所有文章">weekly 资本市场周报</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-2476"><a href="http://www.gamelook.com.cn/category/wiixboxps3" title="查看 电视游戏 下的所有文章">电视游戏</a>
+<ul class="children">
+	<li class="cat-item cat-item-4554"><a href="http://www.gamelook.com.cn/category/wiixboxps3/xboxkinect%e5%be%ae%e8%bd%af" title="查看 XBOX/Kinect微软 下的所有文章">XBOX/Kinect微软</a>
+</li>
+	<li class="cat-item cat-item-4555"><a href="http://www.gamelook.com.cn/category/wiixboxps3/ps3sony" title="查看 PS3/SONY 下的所有文章">PS3/SONY</a>
+</li>
+	<li class="cat-item cat-item-4556"><a href="http://www.gamelook.com.cn/category/wiixboxps3/wii%e4%bb%bb%e5%a4%a9%e5%a0%82" title="查看 WII/任天堂 下的所有文章">WII/任天堂</a>
+</li>
+	<li class="cat-item cat-item-4557"><a href="http://www.gamelook.com.cn/category/wiixboxps3/%e7%94%b5%e8%a7%86%e6%b8%b8%e6%88%8f%e6%95%b0%e6%8d%ae%e6%8a%a5%e5%91%8a%e5%88%86%e6%9e%90" title="查看 电视游戏数据/报告/分析 下的所有文章">电视游戏数据/报告/分析</a>
+</li>
+	<li class="cat-item cat-item-4558"><a href="http://www.gamelook.com.cn/category/wiixboxps3/%e4%ba%91%e8%ae%a1%e7%ae%97onlivegaikai" title="查看 云计算Onlive/Gaikai 下的所有文章">云计算Onlive/Gaikai</a>
+</li>
+	<li class="cat-item cat-item-4559"><a href="http://www.gamelook.com.cn/category/wiixboxps3/googletvappletv" title="查看 GoogleTV/AppleTV 下的所有文章">GoogleTV/AppleTV</a>
+</li>
+	<li class="cat-item cat-item-4560"><a href="http://www.gamelook.com.cn/category/wiixboxps3/%e8%81%94%e6%83%b3ebox" title="查看 联想eBOX/其他主机 下的所有文章">联想eBOX/其他主机</a>
+</li>
+	<li class="cat-item cat-item-4561"><a href="http://www.gamelook.com.cn/category/wiixboxps3/%e7%9b%b8%e5%85%b3%e6%96%b0%e9%97%bb" title="查看 相关新闻 下的所有文章">相关新闻</a>
+</li>
+	<li class="cat-item cat-item-4562"><a href="http://www.gamelook.com.cn/category/wiixboxps3/%e7%94%b5%e8%a7%86%e6%b8%b8%e6%88%8f%e4%ba%a7%e5%93%81" title="查看 电视游戏产品 下的所有文章">电视游戏产品</a>
+</li>
+	<li class="cat-item cat-item-4983"><a href="http://www.gamelook.com.cn/category/wiixboxps3/%e4%ba%92%e8%81%94%e7%bd%91%e7%94%b5%e8%a7%86" title="查看 互联网电视 下的所有文章">互联网电视</a>
+</li>
+	<li class="cat-item cat-item-15192"><a href="http://www.gamelook.com.cn/category/wiixboxps3/ps4sony" title="查看 PS4/SONY 下的所有文章">PS4/SONY</a>
+</li>
+	<li class="cat-item cat-item-15420"><a href="http://www.gamelook.com.cn/category/wiixboxps3/xbox-one%e5%be%ae%e8%bd%af" title="查看 Xbox One/微软 下的所有文章">Xbox One/微软</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-2885"><a href="http://www.gamelook.com.cn/category/%e8%a7%82%e7%82%b9%e5%88%86%e6%9e%90%e8%af%84%e6%b5%8b" title="查看 观点/分析 下的所有文章">观点/分析</a>
+<ul class="children">
+	<li class="cat-item cat-item-8"><a href="http://www.gamelook.com.cn/category/%e8%a7%82%e7%82%b9%e5%88%86%e6%9e%90%e8%af%84%e6%b5%8b/%e4%ba%ba%e7%89%a9%e8%a7%82%e7%82%b9" title="查看 人物观点 下的所有文章">人物观点</a>
+</li>
+	<li class="cat-item cat-item-57"><a href="http://www.gamelook.com.cn/category/%e8%a7%82%e7%82%b9%e5%88%86%e6%9e%90%e8%af%84%e6%b5%8b/%e4%ba%ba%e7%89%a9%e4%b8%93%e8%ae%bf" title="查看 人物专访 下的所有文章">人物专访</a>
+</li>
+	<li class="cat-item cat-item-140"><a href="http://www.gamelook.com.cn/category/%e8%a7%82%e7%82%b9%e5%88%86%e6%9e%90%e8%af%84%e6%b5%8b/%e7%83%ad%e8%be%a3%e7%82%b9%e8%af%84" title="查看 热辣点评 下的所有文章">热辣点评</a>
+</li>
+	<li class="cat-item cat-item-679"><a href="http://www.gamelook.com.cn/category/%e8%a7%82%e7%82%b9%e5%88%86%e6%9e%90%e8%af%84%e6%b5%8b/%e6%b7%b1%e5%ba%a6%e8%af%9d%e9%a2%98" title="查看 深度话题 下的所有文章">深度话题</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-2888"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba" title="查看 数据/报告 下的所有文章">数据/报告</a>
+<ul class="children">
+	<li class="cat-item cat-item-11"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba/%e6%94%bf%e7%ad%96%e5%8a%a8%e6%80%81" title="查看 政策动态/解读 下的所有文章">政策动态/解读</a>
+</li>
+	<li class="cat-item cat-item-63"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba/%e8%a1%8c%e4%b8%9a%e8%96%aa%e9%85%ac" title="查看 行业薪酬 下的所有文章">行业薪酬</a>
+</li>
+	<li class="cat-item cat-item-65"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba/%e6%b8%a0%e9%81%93" title="查看 渠道/支付/虚拟交易 下的所有文章">渠道/支付/虚拟交易</a>
+</li>
+	<li class="cat-item cat-item-66"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba/%e6%b8%b8%e6%88%8f%e8%a1%8c%e4%b8%9a" title="查看 游戏产业数据 下的所有文章">游戏产业数据</a>
+</li>
+	<li class="cat-item cat-item-73"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba/%e6%b6%88%e8%b4%b9%e8%80%85%e7%a0%94%e7%a9%b6" title="查看 消费者研究 下的所有文章">消费者研究</a>
+</li>
+	<li class="cat-item cat-item-2358"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba/%e6%b3%95%e5%be%8b%e6%b3%95%e8%a7%84" title="查看 法律法规 下的所有文章">法律法规</a>
+</li>
+	<li class="cat-item cat-item-2892"><a href="http://www.gamelook.com.cn/category/%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba/%e7%bb%84%e7%bb%87%e7%bb%93%e6%9e%84-%e8%b5%84%e6%9c%ac%e5%b8%82%e5%9c%ba" title="查看 组织结构 下的所有文章">组织结构</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-4551"><a href="http://www.gamelook.com.cn/category/%e6%8e%8c%e6%9c%ba-2" title="查看 掌机 下的所有文章">掌机</a>
+<ul class="children">
+	<li class="cat-item cat-item-96"><a href="http://www.gamelook.com.cn/category/%e6%8e%8c%e6%9c%ba-2/%e6%8e%8c%e6%9c%ba" title="查看 掌机市场分析/报告/数据 下的所有文章">掌机市场分析/报告/数据</a>
+</li>
+	<li class="cat-item cat-item-4552"><a href="http://www.gamelook.com.cn/category/%e6%8e%8c%e6%9c%ba-2/pspngp" title="查看 PSP/NGP 下的所有文章">PSP/NGP</a>
+</li>
+	<li class="cat-item cat-item-4553"><a href="http://www.gamelook.com.cn/category/%e6%8e%8c%e6%9c%ba-2/3dsds" title="查看 3DS/DS 下的所有文章">3DS/DS</a>
+</li>
+	<li class="cat-item cat-item-8104"><a href="http://www.gamelook.com.cn/category/%e6%8e%8c%e6%9c%ba-2/%e7%b4%a2%e5%b0%bcps-vita" title="查看 索尼/PS Vita 下的所有文章">索尼/PS Vita</a>
+</li>
+</ul>
+</li>
+					</ul>
+						
+			<div class="clear"></div>
+			
+		</div> <!--end .footer-cat-->
+		
+		<div class="clear"></div>
+<center>
+内容合作媒体|<a href="http://games.sina.com.cn/y/" target="_blank">新浪游戏</a>
+<a href="http://games.qq.com/cyfw/sy/index.htm" target="_blank">腾讯游戏</a>
+<a href="http://game.163.com/" target="_blank">网易游戏</a>
+<a href="http://job.17173.com/" target="_blank">17173</a>
+<a href="http://web.duowan.com/" target="_blank">多玩游戏网</a>
+<a href="http://chanye.178.com/" target="_blank">178游戏网</a>
+<a href="http://chanye.uuu9.com/" target="_blank">游久网</a>
+<a href="http://zj.pcgames.com.cn/" target="_blank">太平洋游戏网</a>
+<a href="http://bbs.18183.com/" target="_blank">18183</a>
+<a href="http://www.9k9k.com/" target="_blank">9K9K</a>
+
+</center>
+		<div class="bottom">
+		
+			<div class="left">
+				© 2014 <a href="http://www.gamelook.com.cn/" title="游戏大观 | GameLook.com.cn" rel="home">游戏大观 | GameLook.com.cn</a>. All rights reserved. <a href="http://validator.w3.org/check?uri=referer" target="_blank">XHTML</a> / <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">CSS</a> Valid.
+			</div> <!--end .left--> 
+			
+			<div class="right">
+<font color="000000">沪ICP备09048220号</font> 
+
+<script src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/stat.php" language="JavaScript" charset="gb2312"></script><script src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1687346" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/pic.gif"></a>
+							</div> <!--end .right-->
+				
+			<div class="clear"></div>
+						
+		</div> <!--end .bottom-->
+		
+		<div class="clear"></div>
+		
+	</div> <!--end #footer -->
+
+</div> <!--end #wrapper -->
+
+<!--begin of body code-->	
+<!--end of body code-->
+
+
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript">
+var jiathis_config={
+	data_track_clickback:true,
+	siteNum:15,
+	sm:"qzone,tsina,tqq,weixin,renren,douban,xiaoyou,fb,twitter,googleplus,reddit,linkedin",
+	summary:"",
+	boldNum:6,
+	pic:"http://ww3.sinaimg.cn/large/6274760fgw1ea3bbx7b0aj20f0078mz0.jpg",
+	showClose:true,
+	shortUrl:false,
+	hideMore:false
+}
+</script>
+<script type="text/javascript" src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/jiathis_r.js" charset="utf-8"></script><script src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/ckepop.js" charset="utf-8"></script><script src="./CocoStudio实例 [进击的小怪物]制作教程‘游戏大观   GameLook.com.cn_files/ckecenterpop.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
+
+
+
+<!-- Dynamic page generated in 1.369 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2014-04-23 11:48:17 -->
+
+<!-- super cache --><div id="topcontrol" title="Scroll Back to Top" style="position: fixed; bottom: 5px; right: 5px; opacity: 1; cursor: pointer;"><div class="backtotop"></div></div></body></html>

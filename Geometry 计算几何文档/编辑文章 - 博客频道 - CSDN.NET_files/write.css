@@ -1,0 +1,38 @@
+﻿.subtit { padding:12px 4px 2px 4px; color:#999; font-weight:bold; border-bottom:solid 1px #f5f5f5; clear:both; }
+.radioBox { margin-top:6px; }
+.radioBox input { float:left; margin-top:-3px; }
+.radioBox label { float:left; padding:0px 24px 0px 2px; margin-top:-4px; margin-top:0px \9; }
+.channel input,.channel label { margin-bottom:10px; }
+.radioBox2 { float:left; }
+.radioBox2 label { padding-right:10px;}
+.subtit { margin:6px 0px; border-bottom-color:#f0f0f0; }
+input.btngray { background-color:#ccc; color:#000; margin-left:4px; }
+
+#mytag { position:absolute; overflow:auto; border:solid 1px #ccc; border-bottom-color:#999; border-right-color:#777; background-color:#f9f9f9;}
+.right { text-align:right;}
+#mytag p.bot { text-align:right; padding:10px 6px 4px 0px; }
+
+
+#tagbox { padding-right:10px; }
+#tagtb { float:left; }
+#tagtb td { width:130px; padding-bottom:4px; overflow:hidden;white-space:nowrap;text-overflow:ellipsis; }
+#tagall { float:left; margin-top:6px; }
+
+#tag2box { width:561px; border:solid 1px #ffcccc; border-radius:4px; padding:10px; margin-top:1px; }
+#tag2box a { float:left; display:block; cursor:pointer; border:solid 1px #ccc; border-radius:5px; padding:4px 6px; margin:0 10px 10px 0;}
+#tag2box a:hover { text-decoration:none; background-color:#eee;}
+#tag2box a.act { background-color:#ffffcc; }
+#tag2box th { width:80px; font-weight:normal; vertical-align:top; padding-top:4px; }
+#d_tag2 { position:absolute; z-index:101; float:left; left:4px; top:2px;}
+#d_tag2 span { cursor:default; display:inline-block; border:solid 1px #ccc; background-color:#ffffcc; border-radius:5px; padding:2px 4px; margin-right:4px;}
+
+#autosave_note { font-size:12px; padding-left:20px; color:Green; font-weight:normal; }
+
+#selType { float:left; padding:2px; height:24px; margin-right:2px; }
+
+.btn_area_1{padding:30px 0 14px 300px; background:url(../images/btnarea_bg.gif) repeat-x top; text-align:left;}
+.btn_area_1 input{margin:0 20px;}
+
+#top_note { width:500px; position:absolute; z-index:100; top:180px; left:50%; margin-left:-250px; padding:10px; text-align:center; border:solid 1px #ffcc00; background-color:#ffffcc; font-size:14px; color:#663300;letter-spacing:3px;}
+
+.savenote {border:solid 1px #ffcc00; background-color:#ffffcc; text-align:left; padding:6px 12px;}

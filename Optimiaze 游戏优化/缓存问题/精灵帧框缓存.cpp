@@ -1,0 +1,1 @@
+CCSpriteFrameCache主要服务于多张碎图合并出来的纹理图片。这种纹理在一张大图中包含了多张小图，直接通过CCTextureCache引用会有诸多不便，因而衍生出来精灵框帧的处理方式，即把截取好的纹理信息保存在一个精灵框帧内，精灵通过切换不同的框帧来显示出不同的图案。static CCSpriteFrameCache* sharedSpriteFrameCache(void);  //全局共享的缓存单例  void addSpriteFramesWithFile(const char *pszPlist);  //通过plist配置文件添加一组精灵帧  void removeUnusedSpriteFrames(void);  //清理无用缓存 

@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0045)http://write.blog.csdn.net/article/uploadimg2 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>UploadImg</title>
+    
+    <style type="text/css">
+    body { margin:0px; padding:0px; font-family:Arial; font-size:12px; }
+    </style>
+<style type="text/css"></style></head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data" onsubmit="return chkForm();">
+    <input id="file1" name="file1" type="file" style="width:380px;">
+    <p style="padding-top:100px;"><input type="submit"></p>
+    </form>
+    <script type="text/javascript">
+        function setPath(path) {
+            parent.setPath2(path);
+        }
+        function showErr(err){
+            parent.showErr2(err);
+        }
+        function chkForm() {
+            var f = document.getElementById("file1").value;
+            if (!f) {
+                showErr("请选择要上传的图片。");
+                return false;
+            }
+            var ext = f.substr(f.lastIndexOf(".") + 1).toLowerCase();
+            if (".jpg.gif.png.bmp.".indexOf('.' + ext + '.') == -1) {
+                showErr("图片格式不正确。");
+                return false;
+            }
+            return true;
+        }
+        
+    </script>
+
+
+</body></html>
