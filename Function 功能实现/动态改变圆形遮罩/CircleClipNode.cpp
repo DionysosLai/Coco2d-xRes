@@ -128,7 +128,6 @@ void CircleClipNode::update( float delta )
 	pClip->setStencil(pStencil);
 }
 
-
 void CircleClipNode::setEnd(bool var)
 {
 	this->m_bEnd = var;
