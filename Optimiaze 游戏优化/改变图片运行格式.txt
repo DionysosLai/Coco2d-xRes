@@ -1,0 +1,1 @@
+CCTexture2D::setDefaultAlphaPixelFormat(CCTexture2DPixelFormat::kCCTexture2DPixelFormat_RGBA4444);

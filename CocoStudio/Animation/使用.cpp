@@ -11,7 +11,7 @@ m_pArmature->setPosition(ccp(200, 200));
 
 addChild(m_pArmature, 1);
 
-void HelloWorld::onAnimationEvent( CCArmature *pArmature, MovementEventType eventType, const char *animationID )
+void HelloWorld::onAnimationEvent( cocos2d::extension::CCArmature *pArmature, cocos2d::extension::MovementEventType eventType, const char *animationID )
 {
 	/// LOOP_COMPLETE 只有在动作是循环播放时，且每循环一次响应一次
 	if (eventType == LOOP_COMPLETE)
@@ -31,7 +31,7 @@ void HelloWorld::onAnimationEvent( CCArmature *pArmature, MovementEventType even
 	}
 }
 
-void HelloWorld::onFrameEvent( CCBone* bone, const char* evt, int originFrameIndex, int currentFrameIndex )
+void HelloWorld::onFrameEvent( cocos2d::extension::CCBone* bone, const char* evt, int originFrameIndex, int currentFrameIndex )
 {
 	if (originFrameIndex == currentFrameIndex)
 	{

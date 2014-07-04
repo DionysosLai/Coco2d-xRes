@@ -24,6 +24,9 @@ class CircleClipNode : public cocos2d::CCNode
 public:
 	CircleClipNode();
 	~CircleClipNode();
+
+	virtual void onEnter();
+	virtual void onExit();
 public:
 	///@brief 创建圆心遮罩
 	///@param[in] cen--圆心 radius--半径 radiusDelta--- 每次半径渐变大小， radiusEnd--当半径大于或小于某一值时，设置运动结束 bInverted--true--显示“底板-模板内容 ”
@@ -31,8 +34,20 @@ public:
 	///@return 说明
 	static CircleClipNode* create(cocos2d::CCPoint cen, float radius, float radiusDelta, float radiusEnd, bool bInverted);
 	virtual bool init(cocos2d::CCPoint cen, float radius, float radiusDelta, float radiusEnd, bool bInverted);
+///@brief 
+///@param[in/out] 
+///@pre 前者条件 
+///@return 
+	void onRunClip(float delta);
 
 	CC_PROPERTY(bool, m_bEnd, End);
+public:
+///@brief 开始运动
+///@param[in/out] 
+///@pre 前者条件 
+///@return 
+	void startClip();
+
 private:
 	void initData(cocos2d::CCPoint cen, float radius, float radiusDelta, float radiusEnd, bool bInverted);
 
@@ -42,6 +57,10 @@ private:
 	cocos2d::CCPoint m_pointCen;	///< 圆心
 	float m_fRadiusDelta;			///< 半径
 	float m_fRadiusEnd;				///< 半径大于或小于多少时，遮罩设置结束
+
+	bool m_bStartClip;
+	bool m_bRunClip;				///< 控制圆圈收缩
+	unsigned int m_uiRunclip;
 
 protected:
 
