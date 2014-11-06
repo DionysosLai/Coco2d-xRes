@@ -82,5 +82,27 @@ bool pointInInCircle(const cocos2d::CCPoint& p0, const cocos2d::CCPoint& r0, con
 ///@return true---在线段上， false---不在线段上
 bool segmentLineIsIntersect(const cocos2d::CCPoint& aa, const cocos2d::CCPoint& bb, const cocos2d::CCPoint& cc, const cocos2d::CCPoint& dd);
 
-void onWordVisible(cocos2d::CCSprite* node);
+///@brief 获取两点间的角度值
+///@param[in/out] 
+///@pre 前者条件 
+///@return 
+float getAngle( const cocos2d::CCPoint& posBegin, const cocos2d::CCPoint& posCen );
+
+///@brief 判断线段圆是否相交
+///@param[in/out] 
+///@pre 前者条件 
+///@return 
+	bool isCircleLineCollision(const cocos2d::CCPoint& r1, const float& radius, const cocos2d::CCPoint& p1, const cocos2d::CCPoint& p2);
+
+///@brief 判断两个圆是否碰撞
+///@param[in] r1--圆1圆心 radius1---圆1半径 r2--圆2圆心 radius2---圆2半径
+///@pre 前者条件
+///@return 说明
+	bool isCircleCollision(const cocos2d::CCPoint& r1, const float& radius1, const cocos2d::CCPoint& r2, const float& radius2);
+
+///@brief 判断两个矩形是否相交
+///@param[] 
+///@pre 前者条件
+///@return 说明
+	bool isRectsCollision(cocos2d::CCPoint a0, float aWidth, float aHeight, cocos2d::CCPoint b0, float bWidth, float bHeight);
 #endif	///<(__GEOMETRY_H__)

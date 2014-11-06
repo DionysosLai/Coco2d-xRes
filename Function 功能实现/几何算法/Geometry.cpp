@@ -372,11 +372,150 @@ bool pointInInCircle( const cocos2d::CCPoint& p0, const cocos2d::CCPoint& r0, co
 	}
 }
 
-void onWordVisible( cocos2d::CCSprite* node )
+///@brief 根据位置，获取角度值
+///@param[in/out] 
+///@return 
+///@author DionysosLai,906391500@qq.com 
+///@retval  
+///@post 
+///@version 1.0 
+///@data 2014-7-18 16:27
+float getAngle( const cocos2d::CCPoint& posBegin, const cocos2d::CCPoint& posCen )
 {
-	CCActionInterval*  action = CCFadeOut::create(1.f);
-	node->stopAllActions();
-	node->setVisible(true);
-	node->setOpacity(255);
-	node->runAction( CCSequence::create( CCDelayTime::create(1.0f), action,  NULL));
+	CCPoint deltaPoint = posBegin - posCen;
+
+	float angleRadians = atanf(deltaPoint.y / deltaPoint.x);
+	float angleDegrees = CC_RADIANS_TO_DEGREES(angleRadians);
+	float cocosAngle = angleDegrees;
+	if (deltaPoint.x >= 0 && deltaPoint.y >= 0)	///< 第一象限
+	{
+		cocosAngle = cocosAngle;
+	}
+	if (deltaPoint.x < 0 && deltaPoint.y >= 0)	///< 第二象限
+	{
+		cocosAngle = 180.f + cocosAngle;
+	}
+	if (deltaPoint.x < 0 && deltaPoint.y < 0)	///< 第三象限
+	{
+		cocosAngle = 180.f + cocosAngle;
+	}
+	if (deltaPoint.x >= 0 && deltaPoint.y < 0)	///< 第四象限
+	{
+		cocosAngle = 360.f + cocosAngle;
+	}	
+
+	//	CCLOG("%f", cocosAngle);
+	return cocosAngle;
+}
+
+///@brief 判断线段圆是否相交 
+///@param[in/out] 
+///@return 
+///@author DionysosLai,906391500@qq.com 
+///@retval  
+///@post 
+///@version 1.0 
+///@data 2014-9-3 11:10
+bool isCircleLineCollision( const cocos2d::CCPoint& r1, const float& radius, const cocos2d::CCPoint& p1, const cocos2d::CCPoint& p2 )
+{
+	/// 判断线段是否是一个点
+	float length = 0.f;
+	if (p1.equals(p2))
+	{
+		length = ccpDistance(r1, p1);
+	}
+
+	/// 初始垂足为0；
+	CCPoint crossPoint = CCPointZero;
+	do 
+	{
+		/// 判断线段是否平行于x轴
+		if (p1.y == p2.y)
+		{
+			crossPoint = ccp(r1.x, p1.y);
+			break;
+		}
+		/// 判断线段是否平行于y轴
+		if (p1.x == p2.x)
+		{
+			crossPoint = ccp(p1.x, r1.y);
+			break;
+		}
+		/// 如果线段不是特殊情况，则只能采用直线方程方式联立求解
+		float k = (p2.y - p1.y)/(p2.x - p1.x);		///< 求得斜率
+		/// 线段直线方程：	y = k* ( x - s0.x) + s0.y
+		/// 垂线方程为：	y = (-1/k) * (x - p0.x) + p0.y 。
+		/// 联立两直线方程解得
+		float x = ( k*k * p1.x + k * (r1.y - p1.y ) + r1.x ) / ( k*k + 1);
+		float y = k * ( x - p1.x) + p1.y;
+		crossPoint = ccp(x, y);
+
+		/// 判断垂直是否在线段上
+
+		if (pointIsAtLine(crossPoint, p1, p2))
+		{
+			/*		return crossPoint;*/
+		}
+		else
+		{
+			/// 如果不在则计算两端点到垂足的距离，选择距离垂足较近的端点返回。
+			float distance1 = ccpDistance(crossPoint, p1);
+			float distance2 = ccpDistance(crossPoint, p2);
+			if (distance1 < distance2)
+			{
+				crossPoint = p1;
+			}
+			else
+			{
+				crossPoint= p2;
+			}
+		}
+
+		length = ccpDistance(r1, crossPoint);
+
+		break;
+	} while (0);
+
+	if (length < radius)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+///@brief 判断两个圆是否碰撞
+///@param[in] r1--圆1圆心 radius1---圆1半径 r2--圆2圆心 radius2---圆2半径
+///@return 
+///@author DionysosLai,906391500@qq.com 
+///@retval  
+///@post 
+///@version 1.0 
+///@data 2014-6-23 17:02
+bool isCircleCollision( const cocos2d::CCPoint& r1, const float& radius1, const cocos2d::CCPoint& r2, const float& radius2 )
+{
+	float circleDistance = ccpDistance(r1, r2);
+	if (circleDistance < (radius1+radius2))
+	{
+		return true;
+	}
+	return false;
+}
+
+///@brief 判断两个矩形是否相交
+///@param[in] 
+///@return 
+///@author DionysosLai,906391500@qq.com 
+///@retval  
+///@post 
+///@version 1.0 
+///@data 2014-6-6 15:00
+bool isRectsCollision( cocos2d::CCPoint a0, float aWidth, float aHeight, cocos2d::CCPoint b0, float bWidth, float bHeight )
+{
+	float	lengthX	= abs(a0.x - b0.x);	///< 获得两个矩形中心的距离 
+	float	lengthY	= abs(a0.y - b0.y); 
+
+	return  (lengthX < (aWidth + bWidth)/2.0f && lengthY < (aHeight + bHeight)/2.0f) ? true : false;
 }
