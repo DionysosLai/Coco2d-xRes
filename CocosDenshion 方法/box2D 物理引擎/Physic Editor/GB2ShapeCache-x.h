@@ -37,12 +37,36 @@
 #define GB2ShapeCache_x_h
 
 #include "cocos2d.h"
+#include "Box2D/Box2D.h"
 
 class BodyDef;
 class b2Body;
 
-namespace cocos2d {
-	class GB2ShapeCache {
+namespace cocos2d {		
+	struct Vec
+	{
+		b2Vec2 vec[8];
+		unsigned int num;
+	};
+	class GB2ShpaePrimalCache
+	{
+	public:
+		unsigned int m_uiShapeType;		///< 形状类型
+		unsigned short m_usCategoryBits;
+		unsigned short m_usMaskBits;
+		signed short m_sGroupIndex;
+		float m_fFriction;
+		float m_fDensity;
+		float m_fRestitution;
+		bool m_bisSensor;
+		std::vector<Vec*> vertices;		///< 多边形数据
+		float m_radius;						///< 圆形数据
+		b2Vec2 m_p;
+		int m_iCallbackData;				///< 非box2d数据，自定义数据
+	};
+
+	class GB2ShapeCache 
+	{
 	public:
 		// Static interface
 		static GB2ShapeCache* sharedGB2ShapeCache(void);
@@ -51,6 +75,10 @@ namespace cocos2d {
 		bool init();			
 		void addShapesWithFile(const std::string &plist);
 		void addFixturesToBody(b2Body *body, const std::string &shape);
+///@brief 绑定对象的物理模型
+///@param[in] scale---物理模型的比例
+///@return 
+		void addFixturesToBody(b2Body *body, const std::string &shape, const float& scale);
 		cocos2d::CCPoint anchorPointForShape(const std::string &shape);
 		void reset();
 		float getPtmRatio() { return ptmRatio; }
@@ -58,9 +86,9 @@ namespace cocos2d {
 		
 	private:
 		std::map<std::string, BodyDef *> shapeObjects;
+		std::map<std::string, GB2ShpaePrimalCache *> shapePrimalCaches;
 		GB2ShapeCache(void) {}
 		float ptmRatio;
 	};
 }
-
 #endif

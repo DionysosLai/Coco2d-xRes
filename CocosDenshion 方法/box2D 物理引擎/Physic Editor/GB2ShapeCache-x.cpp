@@ -107,6 +107,64 @@ void GB2ShapeCache::addFixturesToBody(b2Body *body, const std::string &shape) {
     }
 }
 
+void cocos2d::GB2ShapeCache::addFixturesToBody( b2Body *body, const std::string &shape, const float& scale )
+{
+	std::map<std::string, GB2ShpaePrimalCache *>::iterator pos = shapePrimalCaches.find(shape);
+	assert(pos != shapePrimalCaches.end());
+	
+	GB2ShpaePrimalCache *primalCache =(*pos).second;
+	
+	b2FixtureDef basicData;
+	basicData.filter.categoryBits = primalCache->m_usCategoryBits;
+	basicData.filter.maskBits = primalCache->m_usMaskBits;
+	basicData.filter.groupIndex = primalCache->m_sGroupIndex;	
+	basicData.friction = primalCache->m_fFriction;
+	basicData.density = primalCache->m_fDensity;
+	basicData.restitution = primalCache->m_fRestitution;
+	basicData.isSensor = primalCache->m_bisSensor;
+
+	switch (primalCache->m_uiShapeType)
+	{
+	case 0:		///< 圆形
+		{
+			FixtureDef *fix = new FixtureDef();
+			fix->fixture = basicData; // copy basic data
+			fix->callbackData = primalCache->m_iCallbackData;
+
+			b2CircleShape *circleShape = new b2CircleShape();
+			circleShape->m_radius = primalCache->m_radius * scale;
+			circleShape->m_p = primalCache->m_p;
+			fix->fixture.shape = circleShape;
+			body->CreateFixture(&fix->fixture);
+		}
+		break;
+	case 2:		///< 多边形
+		{
+			for (unsigned int i = 0; i < primalCache->vertices.size(); ++i)
+			{
+				FixtureDef *fix = new FixtureDef();
+				fix->fixture = basicData; // copy basic data
+				fix->callbackData = primalCache->m_iCallbackData;
+				b2Vec2 vertices[b2_maxPolygonVertices];
+				for (unsigned int j = 0; j < primalCache->vertices.at(i)->num; ++j)
+				{
+					vertices[j].x = primalCache->vertices.at(i)->vec[j].x * scale;
+					vertices[j].y = primalCache->vertices.at(i)->vec[j].y * scale;
+				}				
+				b2PolygonShape *polyshape = new b2PolygonShape();
+				polyshape->Set(vertices, primalCache->vertices.at(i)->num);
+				fix->fixture.shape = polyshape;
+				body->CreateFixture(&fix->fixture);
+			}
+		}
+		break;
+	default:
+		CCAssert(0, "Unknown fixtureType");
+		break;
+	}
+	
+}
+
 cocos2d::CCPoint GB2ShapeCache::anchorPointForShape(const std::string &shape) {
 	std::map<std::string, BodyDef *>::iterator pos = shapeObjects.find(shape);
 	assert(pos != shapeObjects.end());
@@ -146,14 +204,16 @@ void GB2ShapeCache::addShapesWithFile(const std::string &plist) {
     CCDICT_FOREACH(bodyDict,dictElem )
     {
         bodyData = (CCDictionary*)dictElem->getObject();
-        bodyName = dictElem->getStrKey();
+        bodyName = dictElem->getStrKey();		///< map的key
         
-        
+		/// body对象
         BodyDef *bodyDef = new BodyDef();
         bodyDef->anchorPoint = CCPointFromString(static_cast<CCString *>(bodyData->objectForKey("anchorpoint"))->getCString());
         CCArray *fixtureList = (CCArray*)(bodyData->objectForKey("fixtures"));
         FixtureDef **nextFixtureDef = &(bodyDef->fixtures);
         
+		GB2ShpaePrimalCache *primalCache = new GB2ShpaePrimalCache();
+
         //iterate fixture list
         CCObject *arrayElem;
         CCARRAY_FOREACH(fixtureList, arrayElem)
@@ -162,28 +222,43 @@ void GB2ShapeCache::addShapesWithFile(const std::string &plist) {
             CCDictionary* fixtureData = (CCDictionary*)arrayElem;
             
             basicData.filter.categoryBits = static_cast<CCString *>(fixtureData->objectForKey("filter_categoryBits"))->intValue();
-            
+            primalCache->m_usCategoryBits = basicData.filter.categoryBits;
+
             basicData.filter.maskBits = static_cast<CCString *>(fixtureData->objectForKey("filter_maskBits"))->intValue();
+			primalCache->m_usMaskBits = basicData.filter.maskBits;
+
             basicData.filter.groupIndex = static_cast<CCString *>(fixtureData->objectForKey("filter_groupIndex"))->intValue();
+			primalCache->m_sGroupIndex = basicData.filter.groupIndex;	
+
             basicData.friction = static_cast<CCString *>(fixtureData->objectForKey("friction"))->floatValue();
+			primalCache->m_fFriction = basicData.friction;
             
             basicData.density = static_cast<CCString *>(fixtureData->objectForKey("density"))->floatValue();
+			primalCache->m_fDensity = basicData.density;
             
             basicData.restitution = static_cast<CCString *>(fixtureData->objectForKey("restitution"))->floatValue();
-            
+ 			primalCache->m_fRestitution = basicData.restitution;
+
             basicData.isSensor = (bool)static_cast<CCString *>(fixtureData->objectForKey("isSensor"))->intValue();
+			primalCache->m_bisSensor = basicData.isSensor;
            
             CCString *cb = static_cast<CCString *>(fixtureData->objectForKey("userdataCbValue"));
             
             int callbackData = 0;
+			primalCache->m_iCallbackData = 0;
 
 			if (cb)
+			{
 				callbackData = cb->intValue();
+				primalCache->m_iCallbackData = cb->intValue();
+			}
+
 
 			std::string fixtureType = static_cast<CCString *>(fixtureData->objectForKey("fixture_type"))->m_sString;
 
 			if (fixtureType == "POLYGON") {
 				CCArray *polygonsArray = (CCArray *)(fixtureData->objectForKey("polygons"));
+				primalCache->m_uiShapeType = 2;
 				
                 CCObject *dicArrayElem;
                 CCARRAY_FOREACH(polygonsArray, dicArrayElem)
@@ -200,18 +275,26 @@ void GB2ShapeCache::addShapesWithFile(const std::string &plist) {
                     assert(polygonArray->count() <= b2_maxPolygonVertices);
                     
                     CCObject *piter;
+					Vec* vec = new Vec();
+					
                     CCARRAY_FOREACH(polygonArray, piter)
                     {
                         CCString *verStr = (CCString*)piter;
                         CCPoint offset = CCPointFromString(verStr->getCString());
                         vertices[vindex].x = (offset.x / ptmRatio) ;
                         vertices[vindex].y = (offset.y / ptmRatio) ;
+						vec->vec[vindex].x = (offset.x / ptmRatio) ;
+						vec->vec[vindex].y = (offset.y / ptmRatio) ;
                         vindex++;
                     }
                     
                     polyshape->Set(vertices, vindex);
+					
                     fix->fixture.shape = polyshape;
-                    
+
+					vec->num = vindex;
+                    primalCache->vertices.push_back(vec);
+
                     // create a list
                     *nextFixtureDef = fix;
                     nextFixtureDef = &(fix->next);
@@ -224,13 +307,17 @@ void GB2ShapeCache::addShapesWithFile(const std::string &plist) {
                 fix->fixture = basicData; // copy basic data
                 fix->callbackData = callbackData;
 
+				primalCache->m_uiShapeType = 0;
+
                 CCDictionary *circleData = (CCDictionary *)fixtureData->objectForKey("circle");
 
                 b2CircleShape *circleShape = new b2CircleShape();
 				
                 circleShape->m_radius = static_cast<CCString *>(circleData->objectForKey("radius"))->floatValue() / ptmRatio;
+				primalCache->m_radius = circleShape->m_radius;
 				CCPoint p = CCPointFromString(static_cast<CCString *>(circleData->objectForKey("position"))->getCString());
                 circleShape->m_p = b2Vec2(p.x / ptmRatio, p.y / ptmRatio);
+				primalCache->m_p = b2Vec2(p.x / ptmRatio, p.y / ptmRatio);
                 fix->fixture.shape = circleShape;
 				
                 // create a list
@@ -244,7 +331,7 @@ void GB2ShapeCache::addShapesWithFile(const std::string &plist) {
 		}
         // add the body element to the hash
         shapeObjects[bodyName] = bodyDef;
-
+		shapePrimalCaches[bodyName] = primalCache;
     }
 
 }
